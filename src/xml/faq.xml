@@ -1,0 +1,46 @@
+<div class="container pb-3">
+    <div class="vTitle">FAQ</div>
+
+    <div class="card">
+        <div class="card-header" id="heading_1">
+            <p>
+                <button class="btn btn-link collapsed bg-transparent text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1">
+                    How to return products ?
+                </button>
+            </p>
+        </div>
+        <div id="collapse_1" class="collapse" aria-labelledby="heading_1">
+            <div class="card-body">
+                <p>it look like readable English. Many desktop publishing packages and web page
+                    editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+                    ipsum' will uncover many web sites still in their infancy. Various versions have
+                    evolved over the years,All the Lorem Ipsum generators on the Internet tend to
+                    repeat predefined chunks as necessary, making this the first true generator on
+                    the Internet. It uses a dictionary of over 200 Latin words, combined with a
+                    handful of model sentence structures
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="heading_2">
+            <p>
+                <button class="btn btn-link collapsed bg-transparent text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_2">
+                    Is my payment safe ?
+                </button>
+            </p>
+        </div>
+        <div id="collapse_2" class="collapse" aria-labelledby="heading_2">
+            <div class="card-body">
+                <p>it look like readable English. Many desktop publishing packages and web page
+                    editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+                    ipsum' will uncover many web sites still in their infancy. Various versions have
+                    evolved over the years,All the Lorem Ipsum generators on the Internet tend to
+                    repeat predefined chunks as necessary, making this the first true generator on
+                    the Internet. It uses a dictionary of over 200 Latin words, combined with a
+                    handful of model sentence structures
+                </p>
+            </div>
+        </div>
+    </div>
+</dev>

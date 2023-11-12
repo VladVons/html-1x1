@@ -37,7 +37,7 @@
 					<textarea class="form-control" rows="5" id="comment"></textarea>
 				</div>
 				<div class="mt-4">
-					<button type="submit" class="btn btn-primary">Send</button>
+					<button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o m-1"></i>Send</button>
 				</div>
 			</form>
 		</div>

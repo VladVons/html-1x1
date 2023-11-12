@@ -28,7 +28,7 @@
                 </div>
                 <p>Shop from a wide range of t-shirt from orianz. Pefect for your everyday use, you could pair it with a stylish pair of jeans or trousers complete the look.</p>
                 <div>
-                    <button type="button" class="btn btn-primary mr-2">Add to cart</button>
+                    <button type="button" class="btn btn-primary mr-2"><i class="fa fa-envelope-o m-1"></i>Add to cart</button>
                 </div>
             </div>
         </div>
