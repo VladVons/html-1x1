@@ -196,41 +196,73 @@
 
     <div class="container pb-3">
     <div class="vTitle">Product</div>
-    <div class="row justify-content-center">
-        <div class="col-md-10">
-            <div class="row">
-                <div class="col-md-6 p-3 vBgMaster">
-                    <div class="p-3">
-                        <img id="main-image" src="assets/img/product1.jpg" width="250" />
-                    </div>
-                    <div class="border-top">
-                        <img onclick="change_image(this)" src="assets/img/product1.jpg" width="70">
-                        <img onclick="change_image(this)" src="assets/img/product2.jpg" width="70">
-                    </div>
+    <div>
+        <div class="row">
+            <div class="col-md-5 p-3 vBgMaster">
+                <div class="p-3 d-block mx-auto">
+                    <img class="mx-auto d-block" width="250" src="assets/img/product1.jpg"/>
                 </div>
-                <div class="col-md-6 p-4 vBgSlave">
-                    <div class="text-muted">
-                        <i class="fa fa-heart"></i>
-                        <i class="fa fa-share-alt"></i>
-                    </div>
-                    <div class="mt-4 mb-3">
-                        <p class="text-muted">Orianz</p>
-                        <h5>DVI cabel 1.8m</h5>
-                        <div class="d-flex">
-                            <span class="act-price">$20</span>
-                            <div class="ml-2">
-                                <small class="dis-price">$59</small> <span>40% OFF</span>
-                            </div>
+                <div class="border-top">
+                    <img onclick="change_image(this)" src="assets/img/product1.jpg" width="70">
+                    <img onclick="change_image(this)" src="assets/img/product2.jpg" width="70">
+                </div>
+            </div>
+            <div class="col-md-7 p-4 vBgSlave">
+                <div class="text-muted">
+                    <i class="fa fa-heart"></i>
+                    <i class="fa fa-share-alt"></i>
+                </div>
+                <div class="mt-4 mb-3">
+                    <p class="text-muted">Orianz</p>
+                    <h5>DVI cabel 1.8m</h5>
+                    <div class="d-flex">
+                        <span class="act-price">$20</span>
+                        <div class="ml-2">
+                            <small class="dis-price">$59</small> <span>40% OFF</span>
                         </div>
                     </div>
-                    <p>Shop from a wide range of t-shirt from orianz. Pefect for your everyday use, you could pair it with a stylish pair of jeans or trousers complete the look.</p>
-                    <div>
-                        <button type="button" class="btn btn-primary mr-2">Add to cart</button>
-                    </div>
+                </div>
+                <p>Shop from a wide range of t-shirt from orianz. Pefect for your everyday use, you could pair it with a stylish pair of jeans or trousers complete the look.</p>
+                <div>
+                    <button type="button" class="btn btn-primary mr-2">Add to cart</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Tabs -->
+    <div class="mt-3 vBgMaster">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="details-tab" data-bs-toggle="tab" href="#details">Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="features-tab" data-bs-toggle="tab" href="#features">Features</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade overflow-auto show active" id="details" style="max-height:30em;">
+                <p>This is the details tab content. Add product details here.</p>
+            </div>
+
+            <div class="tab-pane fade overflow-auto" id="features" style="max-height:30em;">
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                    <li>Feature 5</li>
+                    <li>Feature 6</li>
+                    <li>Feature 7</li>
+                    <li>Feature 8</li>
+                    <li>Feature 9</li>
+                    <li>Feature 0</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </div>
 
     <div class="container pb-3">
@@ -310,21 +342,23 @@
 			</div>
 		</div>
 		<div class="col-md-9 pb-2 vBgMaster">
-			<div class="mt-2">
-				<b>Name</b>
-				<input type="text" class="form-control" id="fname" placeholder="Enter Name" name="name">
-			</div>
-			<div class="mt-2">
-				<b>Email</b>
-				<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-			</div>
-			<div class="mt-2">
-				<b>Comment</b>
-				<textarea class="form-control" rows="5" id="comment"></textarea>
-			</div>
-			<div class="mt-4">
-				<button type="submit" class="btn btn-primary">Send</button>
-			</div>
+			<form id="MyForm">
+				<div class="mt-2">
+					<b>Name</b>
+					<input type="text" class="form-control" id="fname" placeholder="Enter Name" name="name">
+				</div>
+				<div class="mt-2">
+					<b>Email</b>
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				</div>
+				<div class="mt-2">
+					<b>Comment</b>
+					<textarea class="form-control" rows="5" id="comment"></textarea>
+				</div>
+				<div class="mt-4">
+					<button type="submit" class="btn btn-primary">Send</button>
+				</div>
+			</form>
 		</div>
 	</div>
 </div>
