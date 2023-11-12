@@ -16,10 +16,12 @@
     <!--#include file='xml/carousel.xml' -->
     <!--#include file='xml/faq.xml' -->
     <!--#include file='xml/products.xml' -->
+    <!--#include file='xml/pagination.xml' -->
     <!--#include file='xml/product.xml' -->
     <!--#include file='xml/cart.xml' -->
     <!--#include file='xml/contact.xml' -->
     <!--#include file='xml/404.xml' -->
+    <!--#include file='xml/login.xml' -->
     <!--#include file='xml/footer.xml' -->
 
     <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>

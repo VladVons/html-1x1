@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DirSrc="../assets/css"
+DirSrc="../assets/vendor/css"
 DirDst="build/css"
 mkdir -p $DirDst
 
