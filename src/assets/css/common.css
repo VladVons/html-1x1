@@ -1,0 +1,65 @@
+:root {
+    --textSizeTitle: 1.5em;
+
+    --colorBgBody: LightBlue;
+    --colorBgFooter: rgb(20, 20, 77);
+    --colorBgMaster: White;
+    --colorBgSlave: LightGray;
+}
+
+/*-- backgrounds --*/
+.vBgMaster {
+    background-color: var(--colorBgMaster)
+}
+
+.vBgSlave {
+    background-color: var(--colorBgSlave)
+}
+
+
+/*-- misc --*/
+body {
+  background-color: var(--colorBgBody);
+}
+
+.btn {
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 10px;
+    color: #ffffff;
+    background: var(--colorBgFooter);
+    border-color: #2f2f2f;
+}
+
+.vFooter{
+  background: var(--colorBgFooter);
+  color:white;
+}
+
+.vTitle {
+    text-align: center;
+    font-size: var(--textSizeTitle);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.qty-input {
+    margin: auto;
+    width: 50px;
+}
+
+.price {
+    font-size: 1em;
+    float: right;
+}
+
+.key-value {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3px;
+}
+
+.card {
+    border-color: #2f2f2f;
+    text-align: center;
+}
