@@ -5,14 +5,14 @@ minimalistic bootstrap eCommerce template written from ground
 
 # snippets
 404
-carousel  
-cart  
-contact  
-faq  
-footer  
-gotop  
-header  
-login  
-pagination  
-products  
-product  
+carousel
+cart
+contact
+faq
+footer
+gotop
+header
+login
+pagination
+products
+product 
