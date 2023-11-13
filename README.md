@@ -1,4 +1,4 @@
-# html-1x1
+# about
 minimalistic bootstrap eCommerce template written from ground
 - bootstrap 5
 - no jQuery
