@@ -2,6 +2,7 @@
 minimalistic bootstrap eCommerce template written from ground
 - bootstrap 5
 - no jQuery
+- small size (< 30Kb)
 
 # snippets
 - 404
