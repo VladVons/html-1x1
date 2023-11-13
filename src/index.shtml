@@ -22,12 +22,13 @@
     <!--#include file='xml/contact.xml' -->
     <!--#include file='xml/404.xml' -->
     <!--#include file='xml/login.xml' -->
-    <!-- #include file='xml/test.xml' -->
+    <!--#include file='xml/timer_modal.xml' -->
     <!--#include file='xml/gotop.xml' -->
     <!--#include file='xml/footer.xml' -->
 
     <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/gotop.js"></script>
+    <script src="assets/js/timer_modal.js"></script>
   </body>
 </html>
