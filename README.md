@@ -4,15 +4,15 @@ minimalistic bootstrap eCommerce template written from ground
 - no jQuery
 
 # snippets
-404
-carousel
-cart
-contact
-faq
-footer
-gotop
-header
-login
-pagination
-products
-product 
+- 404
+- carousel
+- cart
+- contact
+- faq
+- footer
+- gotop
+- header
+- login
+- pagination
+- products
+- product 
