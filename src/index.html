@@ -2,16 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bootstrap Example</title>
+    <title>1x1 snippets</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min2.css">
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
-  <body style="height:1500px">
+  <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top vFooter" id="main_navbar">
   <div class="container">
@@ -73,7 +73,6 @@
 
 <div class="container p-5">
 </div>
-
     <div class="container pb-3">
     <div class="vTitle">Carousel</div>
 
@@ -231,6 +230,21 @@
       </div>
   </div>
 </div>
+    <div class="container mt-5">
+  <h2>Pagenation</h2>
+  <nav>
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">...</a></li>
+      <li class="page-item"><a class="page-link" href="#">18</a></li>
+      <li class="page-item"><a class="page-link" href="#">&raquo;</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
     <div class="container pb-3">
     <div class="vTitle">Product</div>
@@ -302,7 +316,6 @@
     </div>
 
 </div>
-
     <div class="container pb-3">
     <div class="vTitle">Shopping Cart</div>
     <div class="row">
@@ -354,7 +367,6 @@
         </div>
     </div>
 </div>
-
     <div class="container pb-3">
     <div class="vTitle">Contacts</div>
 
@@ -400,7 +412,6 @@
 		</div>
 	</div>
 </div>
-
     <div class="container pb-3">
     <div class="row vBgMaster">
         <div class="col-md-12">
@@ -413,42 +424,66 @@
         </div>
     </div>
 </div>
-
-      <div class="mt-5 pt-3 pb-3 vFooter">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-xs-12">
-          <h2>Мета</h2>
-          <p>Маркетплейс європейської брендової компютерно техніки</p>
-          <p>
-            <a href="#" role="button"><i class="fa fa-facebook m-1"></i></a>
-            <a href="#" role="button"><i class="fa fa-telegram m-1"></i></a>
-            <a href="#" role="button"><i class="fa fa-skype m-1"></i></a>
-              </p>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="card" style="width: 20em;">
+    <div class="card-body">
+      <h5>Login</h5>
+      <form>
+        <div class="mb-3">
+          <label>Username</label>
+          <input type="text" class="form-control" id="username" placeholder="enter username">
         </div>
-        <div class="col-lg-3 col-xs-12">
-          <h4 class="mt-lg-0 mt-sm-3">Посилання</h4>
-            <ul class="m-0 p-0">
-              <li><a href="#">Про нас</a></li>
-              <li><a href="#">Контакти</a></li>
-            </ul>
+        <div class="mb-3">
+          <label>Password</label>
+          <input type="password" class="form-control" id="password" placeholder="enter password">
         </div>
-        <div class="col-lg-4 col-xs-12">
-          <h4 class="mt-lg-0 mt-sm-4">Розташування</h4>
-          <p><i class="fa fa-location-arrow m-1"></i>46035, Тернопіль, Руська 41</p>
-          <p><i class="fa fa-phone m-1"></i>096-7007444</p>
-          <p><i class="fa fa-envelope-o m-1"></i>info@used.1x1.com.ua</p>
-        </div>
-      </div>
-
-      <div class="border-top mt-2">
-        <p>© 2023 1x1. Всі права захищені</p>
-      </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
     </div>
   </div>
+</div>
+
+    <!-- #include file='xml/test.xml' -->
+    <button class="btn btn-primary" id="vBtn-GoTop" onclick="goToTop()">
+  Go top <i class="fa fa-arrow-up"></i>
+</button>
+
+    <div class="mt-5 pt-3 pb-3 vFooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-xs-12">
+        <h2>Мета</h2>
+        <p>Маркетплейс європейської брендової компютерно техніки</p>
+        <p>
+          <a href="#" role="button"><i class="fa fa-facebook m-1"></i></a>
+          <a href="#" role="button"><i class="fa fa-telegram m-1"></i></a>
+          <a href="#" role="button"><i class="fa fa-skype m-1"></i></a>
+            </p>
+      </div>
+      <div class="col-lg-3 col-xs-12">
+        <h4 class="mt-lg-0 mt-sm-3">Посилання</h4>
+          <ul class="m-0 p-0">
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+      </div>
+      <div class="col-lg-4 col-xs-12">
+        <h4 class="mt-lg-0 mt-sm-4">Розташування</h4>
+        <p><i class="fa fa-location-arrow m-1"></i>46035, Тернопіль, Руська 41</p>
+        <p><i class="fa fa-phone m-1"></i>096-7007444</p>
+        <p><i class="fa fa-envelope-o m-1"></i>info@used.1x1.com.ua</p>
+      </div>
+    </div>
+
+    <div class="border-top mt-2">
+      <p>© 2023 1x1. Всі права захищені</p>
+    </div>
+  </div>
+</div>
 
 
     <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/navbar.js"></script>
-   </body>
+    <script src="assets/js/gotop.js"></script>
+  </body>
 </html>

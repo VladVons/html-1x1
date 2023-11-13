@@ -1,7 +1,7 @@
 /*
-Copyright:   Vladimir Vons, UA
-Author:      Vladimir Vons <VladVons@gmail.com>
-Created:     2023.11.07
+Created: 2023.11.07
+Author: Vladimir Vons <VladVons@gmail.com>
+License: GNU, see LICENSE for more details
 */
 
 

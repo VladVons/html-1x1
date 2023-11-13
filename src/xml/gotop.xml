@@ -1,0 +1,3 @@
+<button class="btn btn-primary" id="vBtn-GoTop" onclick="goToTop()">
+  Go top <i class="fa fa-arrow-up"></i>
+</button>

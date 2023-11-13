@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bootstrap Example</title>
+    <title>1x1 snippets</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
-  <body style="height:1500px">
+  <body>
 
     <!--#include file='xml/header.xml' -->
     <!--#include file='xml/carousel.xml' -->
@@ -22,9 +22,12 @@
     <!--#include file='xml/contact.xml' -->
     <!--#include file='xml/404.xml' -->
     <!--#include file='xml/login.xml' -->
+    <!-- #include file='xml/test.xml' -->
+    <!--#include file='xml/gotop.xml' -->
     <!--#include file='xml/footer.xml' -->
 
     <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/navbar.js"></script>
-   </body>
+    <script src="assets/js/gotop.js"></script>
+  </body>
 </html>
