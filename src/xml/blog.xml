@@ -2,7 +2,7 @@
     <div class="vTitle">Blog</div>
 
     <div class="row">
-        <div class="col-md-8 border border-dark vBgMaster">
+        <div class="border border-dark vBgMaster">
             <div class="p-3">
                 <h2>This is a article about DVI cabel</h2>
                 <img src="assets/img/product1.jpg" alt="Blog Post Image" class="float-md-start me-md-4 mb-3" width="300">
