@@ -58,6 +58,8 @@ GitSyncToServ()
   aComment="$1";
   Log "$0->$FUNCNAME($*)"
 
+  jpegoptim --size=200K src/screencapture.jpg
+
   git status
 
   #git add install.sh
