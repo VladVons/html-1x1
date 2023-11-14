@@ -17,6 +17,7 @@
     <!--#include file='xml/faq.xml' -->
     <!--#include file='xml/products.xml' -->
     <!--#include file='xml/pagination.xml' -->
+    <!--#include file='xml/blog.xml' -->
     <!--#include file='xml/product.xml' -->
     <!--#include file='xml/cart.xml' -->
     <!--#include file='xml/contact.xml' -->

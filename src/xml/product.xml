@@ -7,8 +7,8 @@
                     <img class="mx-auto d-block" width="250" src="assets/img/product1.jpg"/>
                 </div>
                 <div class="border-top">
-                    <img onclick="change_image(this)" src="assets/img/product1.jpg" width="70">
-                    <img onclick="change_image(this)" src="assets/img/product2.jpg" width="70">
+                    <img onclick="change_image(this)" src="assets/img/product1.jpg" width="80">
+                    <img onclick="change_image(this)" src="assets/img/product2.jpg" width="80">
                 </div>
             </div>
             <div class="col-md-7 p-4 vBgSlave">
