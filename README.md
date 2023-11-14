@@ -6,6 +6,7 @@ minimalistic bootstrap eCommerce template written from ground
 
 # snippets
 - 404
+- blog
 - carousel
 - cart
 - contact
@@ -17,3 +18,4 @@ minimalistic bootstrap eCommerce template written from ground
 - pagination
 - products
 - product 
+- timer_modal

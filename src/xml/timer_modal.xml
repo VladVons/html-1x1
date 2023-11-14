@@ -1,3 +1,4 @@
+<!-- timer_modal + -->
 <div class="modal fade" id="vTimerModal">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -12,3 +13,4 @@
     </div>
   </div>
 </div>
+<!--  timer_modal- -->
