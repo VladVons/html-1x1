@@ -1,4 +1,5 @@
 .pagination .page-item {
     margin-right: 10px;
-    border: 2px solid var(--colorBgFooter);
+    border-color: var(--colorBgBtn);
+    border: 1px solid var(--colorBgBtn);
 }

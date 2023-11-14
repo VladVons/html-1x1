@@ -2,8 +2,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-5 col-xs-12">
-        <h2>Мета</h2>
-        <p>Маркетплейс європейської брендової компютерно техніки</p>
+    <a class="navbar-brand mr-5" href="/">
+      <img src="assets/img/logo.png" alt="Your Logo" height="50" class="d-inline-block vBgMaster">
+    </a>
+        <h4>Маркет брендової компютерної техніки</h4>
         <p>
           <a href="#" role="button"><i class="fa fa-facebook m-1"></i></a>
           <a href="#" role="button"><i class="fa fa-telegram m-1"></i></a>
