@@ -8,10 +8,11 @@ https://bootsnipp.com/search?q=contact
 
 
 #--- apache ssi
-<Directory "/var/www/1x1.lan/src">
-    ...
-    SSILegacyExprParser on
-</Directory>
+/etc/apache2/sites-enabled/1x1.lan.conf
+    <Directory "/var/www/1x1.lan/src">
+        ...
+        SSILegacyExprParser on
+    </Directory>
 
 a2enmod include
 systemctl restart apache2
