@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 
   <body>
@@ -24,7 +24,7 @@
     <!--#include file='xml/contact.xml' -->
     <!--#include file='xml/404.xml' -->
     <!--#include file='xml/login.xml' -->
-    <!-- #include file='xml/timer_modal.xml' -->
+    <!--#include file='xml/timer_modal.xml' -->
     <!--#include file='xml/gotop.xml' -->
     <!--#include file='xml/footer.xml' -->
 

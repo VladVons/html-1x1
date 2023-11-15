@@ -30,6 +30,10 @@
         width: 100%;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
+    .vSearch {
+            width: 500px;
+    }
 }
 
 /* mobile */
@@ -42,6 +46,10 @@
     .navbar.fixed-top {
         position: static;
         box-shadow: none;
+    }
+
+    .vSearch {
+            width: 200px;
     }
 
   /*

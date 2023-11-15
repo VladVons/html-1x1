@@ -1,16 +1,12 @@
 function bootnavbar(options) {
   const defaultOption = {
-    selector: "main_navbar",
-    animation: true,
-    animateIn: "animate__fadeIn",
+    selector: "vMainNavbar"
   };
 
   const bnOptions = { ...defaultOption, ...options };
 
   init = function () {
-    var dropdowns = document
-      .getElementById(bnOptions.selector)
-      .getElementsByClassName("dropdown");
+    var dropdowns = document.getElementById(bnOptions.selector).getElementsByClassName("dropdown");
 
     Array.prototype.forEach.call(dropdowns, (item) => {
       //add animation
