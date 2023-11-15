@@ -1,7 +1,7 @@
 <!-- cart + -->
 <div class="container pb-3">
     <div class="vTitle">Shopping Cart</div>
-    <div class="row">
+    <div class="row border border-dark">
         <div class="col-md-12 col-lg-8 vBgMaster">
             <div class="row align-items-center mb-2">
                 <div class="col-md-3">

@@ -1,8 +1,8 @@
 <!-- product + -->
-<div class="container pb-3" style="border:1px solid;">
+<div class="container pb-3">
     <div class="vTitle">Product</div>
 
-    <div>
+    <div class="border border-dark">
         <div class="row">
             <div class="col-md-5 p-3 vBgMaster">
                 <div class="p-3 d-block mx-auto">
