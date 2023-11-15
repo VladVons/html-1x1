@@ -24,7 +24,7 @@
     <!--#include file='xml/contact.xml' -->
     <!--#include file='xml/404.xml' -->
     <!--#include file='xml/login.xml' -->
-    <!--#include file='xml/timer_modal.xml' -->
+    <!-- #include file='xml/timer_modal.xml' -->
     <!--#include file='xml/gotop.xml' -->
     <!--#include file='xml/footer.xml' -->
 
