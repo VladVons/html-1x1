@@ -16,6 +16,7 @@ minimalistic bootstrap eCommerce template written from ground
 - header
 - login
 - pagination
+- payment
 - products
 - product 
 - timer_modal

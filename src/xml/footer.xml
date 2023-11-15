@@ -8,9 +8,8 @@
     </a>
         <h4>Маркет брендової компютерної техніки</h4>
         <p>
-          <a href="#" role="button"><i class="fa fa-facebook m-1"></i></a>
-          <a href="#" role="button"><i class="fa fa-telegram m-1"></i></a>
-          <a href="#" role="button"><i class="fa fa-skype m-1"></i></a>
+          <a href="#" role="button"><i class="fa fa-facebook m-1" style="font-size: 2.0rem;"></i></a>
+          <a href="#" role="button"><i class="fa fa-telegram m-1" style="font-size: 2.0rem;"></i></a>
             </p>
       </div>
       <div class="col-lg-3 col-xs-12">
