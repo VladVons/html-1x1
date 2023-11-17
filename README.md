@@ -9,14 +9,16 @@ minimalistic bootstrap eCommerce template written from ground
 - blog
 - carousel
 - cart
+- cart-modal
 - contact
 - faq
 - footer
 - gotop
-- header
 - login
+- navbar
 - pagination
 - payment
 - products
 - product 
+- sitemap
 - timer_modal

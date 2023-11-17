@@ -3,12 +3,10 @@
     <div class="vTitle">FAQ</div>
 
     <div class="card">
-        <div class="card-header" id="heading_1">
-            <p>
-                <button class="btn btn-link collapsed bg-transparent text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1">
-                    How to return products ?
-                </button>
-            </p>
+        <div class="card-header d-flex_" id="heading_1">
+            <button class="border-0" data-bs-toggle="collapse" data-bs-target="#collapse_1">
+                <h3>How to return products ?</h3>
+            </button>
         </div>
         <div id="collapse_1" class="collapse" aria-labelledby="heading_1">
             <div class="card-body">
@@ -21,11 +19,9 @@
     </div>
     <div class="card">
         <div class="card-header" id="heading_2">
-            <p>
-                <button class="btn btn-link collapsed bg-transparent text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_2">
-                    Is my payment safe ?
-                </button>
-            </p>
+            <button class="border-0" data-bs-toggle="collapse" data-bs-target="#collapse_2">
+                <h3>Is my payment safe ?</h3>
+            </button>
         </div>
         <div id="collapse_2" class="collapse" aria-labelledby="heading_2">
             <div class="card-body">
