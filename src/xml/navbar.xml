@@ -39,10 +39,10 @@
         </div>
 
         <div class="d-flex">
-            <a class="nav-link" href="#">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cartModal">
                 <i class="fa fa-shopping-cart"></i>
-                <span class="badge vBgBtn">3</span>
-            </a>
+                <span class="badge vBgBtn viTotalCount">3</span>
+            </button>
 
             <ul class="navbar-nav">
                 <li class="nav-item dropdown ms-2">

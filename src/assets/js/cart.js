@@ -73,43 +73,38 @@ function buildCart() {
     var Arr = [];
     for (var [key, val] of Object.entries(ShoppingCart.Items)) {
         const Data = `
-            <tr>
-                <td>${val.Name}</td>
-                <td>${val.Price}</td>
-                <td>
-                    <div class='input-group'>
-                        <input type='number' class='item-count form-control' data-name='${val.Name}' value='${val.Qty}'>
-                    </div>
-                </td>
-                <td>${val.Qty * val.Price}</td>
-                <td>
-                    <button class='delete-item btn btn-danger' data-name="${val.Name}">X</button>
-                </td>
-            </tr>
+        <div class="row align-items-center mb-2">
+            <div class="col-md-3">
+                <a href="#"><img class="img-fluid rounded-3" style="width: 80px" src="assets/img/product1.jpg" alt="image xyz"></a>
+            </div>
+            <div class="col-md-3">
+                <h4>${val.Name}</h4>
+            </div>
+            <div class="col-md-1">
+                <input type='number' class='form-control qty-input viItemQty' data-name='${val.Name}' value='${val.Qty}'>
+            </div>
+            <div class="col-md-2">
+                ${val.Price} грн
+            </div>
+            <div class="col-md-2 fw-bold">
+                ${val.Qty * val.Price} грн
+            </div>
+            <div class="col-md-1">
+            <button class="btn btn-danger viItemDel" data-name="${val.Name}">X</button>
+        </div>
+        </div>
         `
         Arr.push(Data)
     }
 
     var Total = ShoppingCart.getTotal()
 
-    // // jQuery
-    // $('.show-cart').html(Arr.join(''))
-    // $('.total-cart').html(Total.Sum);
-    // $('.total-count').html(Total.Qty)
-    document.querySelector('.show-cart').innerHTML = Arr.join('')
-    document.querySelector('.total-cart').innerHTML = Total.Sum
-    document.querySelector('.total-count').innerHTML = ` ${Total.Qty} (${Total.Sum})`
+    document.querySelector('.viCartItems').innerHTML = Arr.join('')
+    document.querySelector('.viTotalSum').innerHTML = Total.Sum
+    document.querySelector('.viTotalCount').innerHTML = Total.Qty
 }
 
-// // item add (jQuery)
-// $('.default-btn').click(function (event) {
-//     event.preventDefault()
-//     var name = $(this).data('name')
-//     var price = Number($(this).data('price'))
-//     ShoppingCart.itemAdd(name, name, price, 1)
-//     buildCart()
-// });
-const defaultBtns = document.querySelectorAll('.default-btn');
+const defaultBtns = document.querySelectorAll(".viAddToCart");
 defaultBtns.forEach(function (btn) {
     btn.addEventListener('click', function (event) {
         event.preventDefault()
@@ -117,52 +112,37 @@ defaultBtns.forEach(function (btn) {
         const price = parseFloat(btn.getAttribute('data-price'))
         ShoppingCart.itemAdd(name, name, price, 1)
         buildCart()
-        showAlert(name, 2000);
+        //showAlert(name, 2000);
     })
 })
 
-// // item del (jQuery)
-// $('.show-cart').on("click", ".delete-item", function (event) {
-//     var name = $(this).data('name')
-//     ShoppingCart.itemDel(name)
-//     buildCart()
-// })
-const showCart = document.querySelector('.show-cart');
-showCart.addEventListener('click', function (event) {
-    if (event.target.classList.contains('delete-item')) {
+const CartItems = document.querySelector('.viCartItems');
+CartItems.addEventListener('click', function (event) {
+    if (event.target.classList.contains('viItemDel')) {
+    //if (event.target.id == 'viDelItem') {
+    //if (event.target.getAttribute('data-type') == 'viDelItem') {
         const name = event.target.getAttribute('data-name');
         ShoppingCart.itemDel(name)
         buildCart()
     }
 })
 
-// item count (jQuery)
-// $('.show-cart').on("change", ".item-count", function (event) {
-//     var name = $(this).data('name')
-//     var qty = Number($(this).val())
-//     ShoppingCart.itemSetQty(name, qty)
-//     buildCart()
-// });
-showCart.addEventListener('change', function (event) {
-    if (event.target.classList.contains('item-count')) {
+CartItems.addEventListener('change', function (event) {
+    if (event.target.classList.contains('viItemQty')) {
         const name = event.target.getAttribute('data-name');
-        const qty = event.target.value
+        const qty = parseInt(event.target.value)
         ShoppingCart.itemSetQty(name, qty)
         buildCart()
     }
 })
 
-// items clear (jQuery)
-// $('.clear-all').click(function () {
-//     ShoppingCart.clear();
-//     buildCart();
-// });
-const clearAll = document.querySelector('.clear-all');
+const clearAll = document.querySelector('.viClearAll');
 clearAll.addEventListener('click', function (event) {
     ShoppingCart.clear();
     buildCart();
 })
 
+/*
 const alertBox = document.getElementById('alert-box');
 function showAlert(message, duration) {
     alertBox.innerText = message
@@ -172,5 +152,6 @@ function showAlert(message, duration) {
         alertBox.style.display = 'none'
     }, duration)
 }
+*/
 
 buildCart()
