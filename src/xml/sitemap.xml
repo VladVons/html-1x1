@@ -1,0 +1,29 @@
+<!-- sitemap + -->
+<div class="container mt-5">
+    <ul>
+        <li><a href="#">Category 1</a></li>
+        <li>
+            <a href="#">Category 2</a>
+            <ul>
+                <li><a href="#">Category 21</a></li>
+                <li>
+                    <a href="#">Category 22</a>
+                    <ul>
+                        <li><a href="#">Subcategory 221</a></li>
+                        <li><a href="#">Subcategory 222</a></li>
+                        <li>
+                            <a href="#">Subcategory 223</a>
+                            <ul>
+                                <li><a href="#">Subcategory 2231</a></li>
+                                <li><a href="#">Subcategory 2232</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Category 23</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Category 3</a></li>
+    </ul>
+</div>
+<!-- sitemap - -->

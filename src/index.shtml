@@ -12,7 +12,7 @@
 
   <body>
 
-    <!--#include file='xml/header.xml' -->
+    <!--#include file='xml/navbar.xml' -->
     <!--#include file='xml/carousel.xml' -->
     <!--#include file='xml/faq.xml' -->
     <!--#include file='xml/products.xml' -->

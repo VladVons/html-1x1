@@ -30,11 +30,13 @@ body {
 
 .btn {
     font-weight: 600;
-    padding: 12px 30px;
+    -padding: 12px 30px;
     border-radius: 10px;
     color: white;
     background: var(--colorBgFooter);
-    border-color: var(--colorBgBtn);
+    -border-color: var(--colorBgBtn);
+    box-shadow: 0 2px 5px var(--colorBgBtn);
+
 }
 
 .vFooter{
