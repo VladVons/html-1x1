@@ -13,18 +13,18 @@
   <body>
 
     <!--#include file='xml/navbar.xml' -->
-    <!-- #include file='xml/carousel.xml' -->
-    <!-- #include file='xml/faq.xml' -->
-    <!-- #include file='xml/products.xml' -->
-    <!-- #include file='xml/pagination.xml' -->
-    <!-- #include file='xml/blog.xml' -->
+    <!--#include file='xml/carousel.xml' -->
+    <!--#include file='xml/faq.xml' -->
+    <!--#include file='xml/products.xml' -->
+    <!--#include file='xml/pagination.xml' -->
+    <!--#include file='xml/blog.xml' -->
     <!--#include file='xml/product.xml' -->
     <!--#include file='xml/cart-modal.xml' -->
     <!--#include file='xml/cart.xml' -->
-    <!-- #include file='xml/payment.xml' -->
-    <!-- #include file='xml/contact.xml' -->
-    <!-- #include file='xml/404.xml' -->
-    <!-- #include file='xml/login.xml' -->
+    <!--#include file='xml/payment.xml' -->
+    <!--#include file='xml/contact.xml' -->
+    <!--#include file='xml/404.xml' -->
+    <!--#include file='xml/login.xml' -->
     <!--#include file='xml/timer_modal.xml' -->
     <!--#include file='xml/gotop.xml' -->
     <!--#include file='xml/footer.xml' -->
