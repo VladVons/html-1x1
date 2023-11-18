@@ -12,7 +12,7 @@
                         <h4>DVI cabel 1.8m</h4>
                     </div>
                     <div class="col-md-1">
-                        <input type="number" value="1" min="1" class="qty-input viItemQty">
+                        <input type="number" value="1" min="1" class="vInputQty viItemQty">
                     </div>
                     <div class="col-md-2">
                         123 грн
@@ -32,7 +32,7 @@
                         <h4>USB flash memory 64Gb</h4>
                     </div>
                     <div class="col-md-1">
-                        <input type="number" value="1" min="1" class="qty-input viItemQty">
+                        <input type="number" value="1" min="1" class="vInputQty viItemQty">
                     </div>
                     <div class="col-md-2">
                         123 грн

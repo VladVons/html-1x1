@@ -65,9 +65,9 @@ body * {
     font-weight: bolder;
 }
 
-.qty-input {
+.vInputQty {
     margin: auto;
-    width: 50px;
+    width: 70px;
 }
 
 .vPrice {

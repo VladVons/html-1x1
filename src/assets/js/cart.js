@@ -72,6 +72,7 @@ ShoppingCart = new TShoppingCart()
 function buildCart() {
     var Arr = [];
     for (var [key, val] of Object.entries(ShoppingCart.Items)) {
+        console.log(val)
         const Data = `
         <div class="row align-items-center mb-2">
             <div class="col-md-3">
@@ -81,7 +82,7 @@ function buildCart() {
                 <h4>${val.Name}</h4>
             </div>
             <div class="col-md-1">
-                <input type='number' class='form-control qty-input viItemQty' data-name='${val.Name}' value='${val.Qty}'>
+                <input type='number' class='form-control vInputQty viItemQty' data-name='${val.Name}' value='${val.Qty}'>
             </div>
             <div class="col-md-2">
                 ${val.Price} грн
