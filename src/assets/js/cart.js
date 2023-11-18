@@ -72,7 +72,6 @@ ShoppingCart = new TShoppingCart()
 function buildCart() {
     var Arr = [];
     for (var [key, val] of Object.entries(ShoppingCart.Items)) {
-        console.log(val)
         const Data = `
         <div class="row align-items-center mb-2">
             <div class="col-md-3">
@@ -113,7 +112,7 @@ defaultBtns.forEach(function (btn) {
         const price = parseFloat(btn.getAttribute('data-price'))
         ShoppingCart.itemAdd(name, name, price, 1)
         buildCart()
-        //showAlert(name, 2000);
+        showTooltip(name + ' OK')
     })
 })
 
@@ -143,16 +142,5 @@ clearAll.addEventListener('click', function (event) {
     buildCart();
 })
 
-/*
-const alertBox = document.getElementById('alert-box');
-function showAlert(message, duration) {
-    alertBox.innerText = message
-    alertBox.style.display = 'block'
-
-    setTimeout(function () {
-        alertBox.style.display = 'none'
-    }, duration)
-}
-*/
 
 buildCart()

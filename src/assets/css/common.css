@@ -12,7 +12,6 @@
 /*-- overwrites --*/
 body {
   background-color: var(--colorBgBody);
-  padding-top: 75px;
 }
 
 body * {
@@ -34,7 +33,6 @@ body * {
     border-color: #2f2f2f;
     text-align: center;
 }
-
 
 /*-- backgrounds --*/
 .vBgMaster {
@@ -86,9 +84,9 @@ body * {
 }
 
 .vKeyValue {
-  display: grid;
-  grid-template-columns: 30% auto;
-  gap: 3px;
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 3px;
 }
 
 .vFeatures p {
