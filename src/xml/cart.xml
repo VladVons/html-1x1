@@ -50,7 +50,7 @@
         </div>
         <div class="col-md-12 col-lg-4 p-3 vBgSlave">
             <h3>Summary</h3>
-            <div class="key-value">
+            <div class="vKeyValue">
                 <p>Subtotal</p><p>246 грн</p>
                 <p>Discount</p><p>0</p>
                 <p>Shipping</p><p>0</p>

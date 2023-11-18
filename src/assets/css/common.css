@@ -39,9 +39,13 @@ body {
 
 }
 
-.vFooter{
+.vFooter {
   background: var(--colorBgFooter);
   color:white;
+}
+
+.vFooter a {
+    color:gray;
 }
 
 .vTitle {
@@ -55,12 +59,22 @@ body {
     width: 50px;
 }
 
-.price {
+.vPrice {
     font-size: 1em;
     float: right;
+    color:red;
 }
 
-.key-value {
+.vPriceBig {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.vPriceDis {
+    text-decoration: line-through
+}
+
+.vKeyValue {
   display: grid;
   grid-template-columns: auto auto;
   gap: 3px;

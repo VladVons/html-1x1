@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var Min = 20 * 1000;
-    var Max = 30 * 1000;
+    var Min = 200 * 1000;
+    var Max = 300 * 1000;
     Delay = Math.random() * (Max - Min) + Min;
     setTimeout(function() {
         var Modal = new bootstrap.Modal(document.getElementById('viTimerModal'));
