@@ -22,4 +22,3 @@ minimalistic bootstrap eCommerce template written from ground
 - product 
 - sitemap
 - timer_modal
--q1
