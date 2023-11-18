@@ -76,8 +76,23 @@ body {
 
 .vKeyValue {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 30% auto;
   gap: 3px;
+}
+
+.vFeatures p {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    display: inline-block;
+    /*
+    -margin-bottom: 2em;
+    -line-height: 0.8;
+    */
+}
+
+.vFeatures p:nth-child(odd) {
+    background-color: var(--colorBgBody);
 }
 
 .card {

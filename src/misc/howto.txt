@@ -19,3 +19,10 @@ https://bootsnipp.com/search?q=contact
 a2enmod include
 systemctl restart apache2
 
+
+#---- fontawesome
+https://fontawesome.com/v5/download
+unzip fontawesome-free-5.15.4-web.zip
+copy fontawesome-free-5.15.4-web/css/all to project/css/fontawesome.css
+replace in fontawesome.css webfonts with fonts
+copy fontawesome-free-5.15.4-web/webfonts/fa-solid-900.woff2 to project/fonts/

@@ -5,13 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/vendor/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 
   <body>
-
     <!--#include file='xml/navbar.xml' -->
     <!--#include file='xml/carousel.xml' -->
     <!--#include file='xml/faq.xml' -->
