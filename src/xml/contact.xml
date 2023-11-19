@@ -7,7 +7,7 @@
                 <div class="pt-2">
                     <p><i class="fa fa-location-arrow m-1"></i>46035, Тернопіль, Руська 41</p>
                     <p><i class="fa fa-phone m-1"></i>096-7007444</p>
-                    <p><i class="fa fa-envelope-o m-1"></i>info@used.1x1.com.ua</p>
+                    <p><i class="fa fa-envelope m-1"></i>info@used.1x1.com.ua</p>
                 </div>
             </div>
             <div class="col-md-9 pb-2 vBgMaster">
@@ -18,8 +18,7 @@
         <div class="row mt-1">
             <div class="col-md-3 vBgSlave">
                 <div>
-                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
-                    <h2>Contact Us</h2>
+                    <h2><i class="fa fa-envelope m-1"></i>Contact Us</h2>
                     <h4>We would love to hear from you !</h4>
                 </div>
             </div>
