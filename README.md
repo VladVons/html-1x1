@@ -14,8 +14,8 @@ bootstrap eCommerce template written from scratch
 - faq
 - footer
 - gotop
+- header
 - login
-- navbar
 - pagination
 - payment
 - products
