@@ -107,11 +107,9 @@ body * {
 .fixed-height-image {
     max-height: 120px;
     max-width: 100%;
-    width: auto;
 }
 
 .fixed-header-card .card-header {
-    height: 130px; 
-    overflow: hidden; 
+    height: 140px; 
 }
  
