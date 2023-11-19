@@ -6,11 +6,13 @@ function showTooltip(aMsg, aId = null) {
         const element = document.getElementById(aId)
         const rect = element.getBoundingClientRect()
 
+        /*
         // ToDo. extra width
         tooltip.style.left = rect.left + 'px'
         tooltip.style.top = (rect.top + rect.height) + 'px'
         tooltip.style.right = 0
         console.log(tooltip.style.width)
+        */
     }
 
     document.body.appendChild(tooltip);

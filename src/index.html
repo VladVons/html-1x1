@@ -19,7 +19,7 @@
            <a href="#">
                 <picture>
                     <source media="(min-width: 465px)" srcset="assets/img/logo-1x1.png">
-                    <img src="assets/img/logo-x.png" alt="Your Logo" height="45">
+                    <img src="assets/img/logo-x.png" alt="Your Logo" height="45" id="viLogo">
                 </picture>
             </a>
 
@@ -53,7 +53,7 @@
         </div>
 
         <div class="d-flex">
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cartModal">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cartModal" id="viCartModal">
                 <i class="fa fa-shopping-cart"></i>
                 <span class="badge vBgBtn viTotalCount">3</span>
             </button>
@@ -275,6 +275,15 @@
 <!-- blog - -->
 
     <!-- product + -->
+<script>
+    const gData = {
+        "lang": {
+            "added_to_cart": "Added to cart",
+            "already_in_cart": "Already in cart"
+        }
+    }
+</script>
+
 <div class="container pb-2">
     <div class="vTitle">Product</div>
 
@@ -529,7 +538,7 @@
 <div class="container pb-3">
     <div class="vTitle">Not found 404</div>
 
-    <div class="row vBgMaster">
+    <div class="row vBgMaster p-3">
         <div class="col-md-12">
             <h2>404 Not Found</h2>
             <p>Sorry, an error has occured, Requested page not found!</p>
