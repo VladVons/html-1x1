@@ -19,7 +19,7 @@ Combine()
 {
     DirSrc="../assets/css"
     FileSrc="$DirSrc/styles.css"
-    FileDst="$DirDst/styles.css"
+    FileDst="$DirDst/styles.all.css"
 
     echo > $FileDst
     grep -o '".*"' $FileSrc | sed 's/"//g' |\
