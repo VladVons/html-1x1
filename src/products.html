@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <title>1x1 snippets</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+
+  <body>
+    <!-- navbar-fixed + -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark vFooter">
+    <div class="container">
+        <div class="d-flex">
+           <a href="#">
+                <picture>
+                    <source media="(min-width: 465px)" srcset="assets/img/logo-1x1.png">
+                    <img src="assets/img/logo-x.png" alt="Your Logo" height="45" id="viLogo">
+                </picture>
+            </a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown" id="viMainNavbar">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  href="#"><i class="fa fa-bars" style="font-size: 2.0em;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a> </li>
+                        <li> <hr class="dropdown-divider"> </li>
+                        <li> <a class="dropdown-item" href="#">Something else here</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a> </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <form role="search" action="/submit" method="post">
+                <div class="input-group vSearch">
+                    <input type="text" class="form-control" placeholder="search">
+                    <button class="btn btn-block" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+
+        <div class="d-flex">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cartModal" id="viCartModal">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="badge vBgBtn viTotalCount">3</span>
+            </button>
+
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown ms-2">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fa fa-dollar"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">uah</a></li>
+                        <li><a class="dropdown-item" href="#">usd</a></li>
+                        <li><a class="dropdown-item" href="#">eur</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+  </div>
+</nav>
+<!--  navbar-fixed - -->
+
+
+<!-- products + -->
+<div class="container-sm pb-3 ">
+    <div class="vTitle">Products</div>
+    <div class="row gx-1">
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 d-flex align-items-stretch">
+        <div class="card">
+          <img src="assets/img/product1.jpg" class="card-img-top" height="200"  alt="Card Image">
+          <div class="card-body d-flex flex-column vBgSlave">
+            <h4 class="fw-bold">123 грн</h4>
+            <h5 class="card-title">DVI cabel 1.8m</h5>
+            <p class="card-text mb-4">Is a manmade waterway dug in the early 1600's and now displays many landmark</p>
+            <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 d-flex align-items-stretch">
+        <div class="card">
+          <img src="assets/img/product2.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body d-flex flex-column vBgSlave">
+            <h4 class="fw-bold text-danger">123 грн</h4>
+            <h2 class="text-decoration-line-through">150 грн</h2>
+            <h5 class="card-title">DVI cabel 1.8m</h5>
+            <p class="card-text mb-4">Near Afionas village</p>
+            <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6  col-md-4 col-lg-2 mb-3 d-flex align-items-stretch">
+        <div class="card">
+          <img src="assets/img/product3.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body d-flex flex-column vBgSlave">
+            <h4 class="fw-bold">123 грн</h4>
+            <h5 class="card-title">USB flash memory 64Gb</h5>
+            <p class="card-text mb-4">Near Afionas village</p>
+            <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 d-flex align-items-stretch">
+        <div class="card">
+          <img src="assets/img/product4.jpg" class="card-img-top" alt="Card Image">
+          <div class="card-body d-flex flex-column vBgSlave">
+            <h4 class="fw-bold">123 грн</h4>
+            <h5 class="card-title">USB flash memory 64Gb</h5>
+            <p class="card-text mb-4">Near Afionas village</p>
+            <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 d-flex align-items-stretch">
+        <div class="card">
+          <img src="assets/img/product5.jpg" class="card-img-top" alt="Card Image">
+           <div class="card-body d-flex flex-column vBgSlave">
+             <h4 class="fw-bold">123 грн</h4>
+            <h5 class="card-title">DVI cabel 1.8m</h5>
+            <p class="card-text mb-4">Near Afionas village</p>
+            <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 d-flex">
+        <div class="card">
+          <img src="assets/img/product6.jpg" alt="Card Image" >
+          <div class="card-body d-flex flex-column vBgSlave">
+            <h4 class="fw-bold">123 грн</h4>
+            <h5 class="card-title">USB flash memory 64Gb</h5>
+            <p>Is a manmade waterway dug in the early 1600's and now displays many landmark</p>
+            <a href="#" class="btn btn-primary stretched-link mt-auto">View</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<!--  products - -->
+
+
+
+    <!-- footer + -->
+<div class="mt-5 pt-3 pb-3 vFooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-xs-12">
+    <a class="navbar-brand mr-5" href="/">
+      <img src="assets/img/logo-1x1.png" alt="Your Logo" height="50" class="d-inline-block">
+    </a>
+        <h4>Маркет брендової компютерної техніки</h4>
+        <p>
+          <a href="#" role="button"><i class="fa fa-facebook m-1" style="font-size: 2.0rem;"></i></a>
+          <a href="#" role="button"><i class="fa fa-telegram m-1" style="font-size: 2.0rem;"></i></a>
+            </p>
+      </div>
+      <div class="col-lg-3 col-xs-12">
+        <h4 class="mt-lg-0 mt-sm-3">Посилання</h4>
+          <ul class="m-0 p-0">
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+      </div>
+      <div class="col-lg-4 col-xs-12">
+        <h4 class="mt-lg-0 mt-sm-4">Розташування</h4>
+        <p><i class="fa fa-location-arrow m-1"></i>46035, Тернопіль, Руська 41</p>
+        <p><i class="fa fa-phone m-1"></i>096-7007444</p>
+        <p><i class="fa fa-envelope-o m-1"></i>info@used.1x1.com.ua</p>
+      </div>
+    </div>
+
+    <div class="border-top mt-2">
+      <p>© 2023 1x1. Всі права захищені</p>
+    </div>
+  </div>
+</div>
+<!--  footer - -->
+
+
+    <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/product.js"></script>
+    <script src="assets/js/gotop.js"></script>
+    <script src="assets/js/timer_modal.js"></script>
+  </body>
+</html>

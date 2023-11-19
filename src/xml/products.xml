@@ -3,7 +3,7 @@
     <div class="vTitle">Products</div>
     <div class="row">
         <div class="col-lg-2 mb-3 d-flex">
-            <div class="card">
+            <div class="card fixed-header-card">
                 <div class="card-header">
                     <img src="assets/img/product1.jpg" class="card-img-top fixed-height-image" alt="Card Image">
                 </div>
@@ -20,7 +20,7 @@
           </div>
 
         <div class="col-lg-2 mb-3 d-flex">
-            <div class="card">
+            <div class="card fixed-header-card">
                 <div class="card-header">
                     <img src="assets/img/product2.jpg" class="card-img-top fixed-height-image" alt="Card Image">
                 </div>
@@ -38,7 +38,7 @@
         </div>
 
         <div class="col-lg-2 mb-3 d-flex">
-            <div class="card">
+            <div class="card fixed-header-card">
                 <div class="card-header">
                     <img src="assets/img/product3.jpg" class="card-img-top fixed-height-image" alt="Card Image">
                 </div>
@@ -55,7 +55,7 @@
         </div>
 
         <div class="col-lg-2 mb-3 d-flex">
-            <div class="card">
+            <div class="card fixed-header-card">
                 <div class="card-header">
                     <img src="assets/img/product4.jpg" class="card-img-top fixed-height-image"  alt="Card Image">
                 </div>
@@ -72,7 +72,7 @@
         </div>
 
         <div class="col-lg-2 mb-3 d-flex">
-            <div class="card">
+            <div class="card fixed-header-card">
                 <div class="card-header">
                     <img src="assets/img/product5.jpg" class="card-img-top fixed-height-image" alt="Card Image">
                 </div>
@@ -89,7 +89,7 @@
         </div>
 
         <div class="col-lg-2 mb-3 d-flex">
-            <div class="card">
+            <div class="card fixed-header-card">
                 <div class="card-header">
                     <img src="assets/img/product6.jpg" class="card-img-top fixed-height-image" alt="Card Image" >
                 </div>
