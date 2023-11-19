@@ -1,5 +1,5 @@
 # about
-minimalistic bootstrap eCommerce template written from ground
+bootstrap eCommerce template written from scratch
 - bootstrap 5
 - no jQuery
 - small size (< 30Kb)
