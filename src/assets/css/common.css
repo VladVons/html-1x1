@@ -109,7 +109,18 @@ body * {
     max-width: 100%;
 }
 
-.vFixedHeaderCard .card-header, .vFixedHeaderCard .card-body {
+.vCard .card-header{
     height: 140px; 
+    background-color: var(--colorBgMaster);
 }
 
+.vCard .card-body {
+    height: 170px;
+    background-color: var(--colorBgSlave);
+}
+
+.vCard .card-footer {
+    background-color: var(--colorBgMaster);
+    display: flex;
+    flex-direction: column;
+}
