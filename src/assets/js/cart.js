@@ -39,7 +39,7 @@ class TShoppingCart {
     }
 
     itemAdd(aKey, aName, aPrice, aQty) {
-        if (aKey in this.Items) {
+        if (this.itemExists(aKey)) {
             aQty += this.Items[aKey].Qty
         }
         this.itemSet(aKey, aName, aPrice, aQty)
@@ -48,6 +48,10 @@ class TShoppingCart {
     itemDel(aKey) {
       delete this.Items[aKey]
       this.saveToStorage()
+    }
+
+    itemExists(aKey) {
+        return aKey in this.Items
     }
 
     itemSet(aKey, aName, aPrice, aQty) {
@@ -110,9 +114,13 @@ defaultBtns.forEach(function (btn) {
         event.preventDefault()
         const name = btn.getAttribute('data-name')
         const price = parseFloat(btn.getAttribute('data-price'))
-        ShoppingCart.itemAdd(name, name, price, 1)
-        buildCart()
-        showTooltip(name + ' OK')
+        if (ShoppingCart.itemExists(name)) {
+            showTooltip(gData.lang.already_in_cart)
+        }else{
+            showTooltip(gData.lang.added_to_cart)
+            ShoppingCart.itemAdd(name, name, price, 1)
+            buildCart()
+        }
     })
 })
 

@@ -2,7 +2,7 @@
 <div class="container pb-3">
     <div class="vTitle">Not found 404</div>
 
-    <div class="row vBgMaster">
+    <div class="row vBgMaster p-3">
         <div class="col-md-12">
             <h2>404 Not Found</h2>
             <p>Sorry, an error has occured, Requested page not found!</p>
