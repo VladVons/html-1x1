@@ -46,7 +46,7 @@
                 </div>
             </div>
             <hr class="mt-3"/>
-            <button type="button" class="btn btn-primary viClearAll">Clear all</button>
+            <button type="button" class="btn btn-primary viClearAll"><i class="fa fa-trash m-1"></i>Clear all</button>
         </div>
         <div class="col-md-12 col-lg-4 p-3 vBgSlave">
             <h3>Summary</h3>
