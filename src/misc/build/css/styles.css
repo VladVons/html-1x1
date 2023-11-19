@@ -1,0 +1,210 @@
+
+
+/* file: ../vendor/css/fonts.css */
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../fonts/roboto.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* file: common.css */
+:root {
+    --textSizeTitle: 1.5em;
+    --font-roboto: normal 20px / 1.4em Roboto Condensed;
+
+    --colorBgBody: rgb(240, 236, 236);
+    --colorBgBtn: red;
+    --colorBgFooter: rgb(20, 20, 77);
+    --colorBgMaster: White;
+    --colorBgSlave: LightGray;
+}
+
+/*-- overwrites --*/
+body {
+  background-color: var(--colorBgBody);
+}
+
+body * {
+  font: var(--font-roboto);
+}
+
+.btn {
+    font-weight: 600;
+    -padding: 12px 30px;
+    border-radius: 10px;
+    color: white;
+    background: var(--colorBgFooter);
+    -border-color: var(--colorBgBtn);
+    box-shadow: 0 2px 5px var(--colorBgBtn);
+
+}
+
+.card {
+    border-color: #2f2f2f;
+    text-align: center;
+}
+
+/*-- backgrounds --*/
+.vBgMaster {
+    background-color: var(--colorBgMaster)
+}
+
+.vBgSlave {
+    background-color: var(--colorBgSlave)
+}
+
+.vBgBtn {
+    background-color: var(--colorBgBtn)
+}
+
+/*-- misc --*/
+.vFooter {
+  background: var(--colorBgFooter);
+  color:white;
+}
+
+.vFooter a {
+    color:gray;
+}
+
+.vTitle {
+    text-align: center;
+    font-size: var(--textSizeTitle);
+    font-weight: bolder;
+}
+
+.vInputQty {
+    margin: auto;
+    width: 70px;
+}
+
+.vPrice {
+    font-size: 1em;
+    float: right;
+    color:red;
+}
+
+.vPriceBig {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.vPriceDis {
+    text-decoration: line-through
+}
+
+.vKeyValue {
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: 3px;
+}
+
+.vFeatures p {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    /*
+    display: inline-block;
+    -margin-bottom: 2em;
+    -line-height: 0.8;
+    */
+}
+
+.vFeatures p:nth-child(odd) {
+    background-color: var(--colorBgBody);
+}
+
+/* file: navbar.css */
+.dropdown-menu .dropdown .dropdown-menu {
+    left: 100%;
+    top: 0%;
+    margin: 0 1px;
+    border-width: 0;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    /* Fixed */
+    body {
+        padding-top: 80px;
+    }
+
+    .navbar.fixed-top {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 2px 10px var(--colorBgBtn);
+    }
+
+    .vSearch {
+        width: 500px;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    /* Non-fixed */
+    body {
+        padding-top: 2px;
+    }
+
+    .navbar.fixed-top {
+        position: static;
+        box-shadow: none;
+        box-shadow: 0 2px 10px var(--colorBgBtn);
+    }
+}
+
+/* file: pagination.css */
+.pagination .page-link {
+    margin-right: 10px;
+    box-shadow: 0 2px 3px var(--colorBgBtn);
+    color: white;
+    background: var(--colorBgFooter);
+ 
+}
+
+/* file: gotop.css */
+#vBtn-GoTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+/* file: carousel.css */
+.carousel-caption {
+    top: 60%;
+    -transform: translateY(-20%);
+    text-align: center;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.2);
+    -background: linear-gradient(to right, var(--colorBgSlave), var(--colorBgFooter));
+    padding: 20px;
+    width: 50%;
+    border-radius: 15px;
+}
+
+/* file: tooltip.css */
+.tooltip {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+
+    background-color: var(--colorBgSlave);
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid var(--colorBgBtn);
+
+    transition: visibility 1s, opacity 1s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tooltip.active {
+    visibility: visible;
+    opacity: 1;
+}
