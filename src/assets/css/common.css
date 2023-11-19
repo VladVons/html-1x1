@@ -104,12 +104,12 @@ body * {
     background-color: var(--colorBgBody);
 }
 
-.fixed-height-image {
+.vFixedHeightImage {
     max-height: 120px;
     max-width: 100%;
 }
 
-.fixed-header-card .card-header {
+.vFixedHeaderCard .card-header {
     height: 140px; 
 }
  
