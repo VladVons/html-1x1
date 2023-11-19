@@ -17,7 +17,7 @@
 
       <div class="col-lg-2 mb-3 d-flex align-items-stretch">
         <div class="card">
-          <img src="assets/img/product1.jpg" class="card-img-top" alt="Card Image">
+          <img src="assets/img/product2.jpg" class="card-img-top" alt="Card Image">
           <div class="card-body d-flex flex-column vBgSlave">
             <h4>123 грн</h4>
             <h5 class="card-title">DVI cabel 1.8m</h5>
@@ -29,7 +29,7 @@
 
       <div class="col-lg-2 mb-3 d-flex align-items-stretch">
         <div class="card">
-          <img src="assets/img/product2.jpg" class="card-img-top" alt="Card Image">
+          <img src="assets/img/product3.jpg" class="card-img-top" alt="Card Image">
           <div class="card-body d-flex flex-column vBgSlave">
             <h4>123 грн</h4>
             <h5 class="card-title">USB flash memory 64Gb</h5>
@@ -41,7 +41,7 @@
 
       <div class="col-lg-2 mb-3 d-flex align-items-stretch">
         <div class="card">
-          <img src="assets/img/product2.jpg" class="card-img-top" alt="Card Image">
+          <img src="assets/img/product4.jpg" class="card-img-top" alt="Card Image">
           <div class="card-body d-flex flex-column vBgSlave">
             <h4>123 грн</h4>
             <h5 class="card-title">USB flash memory 64Gb</h5>
