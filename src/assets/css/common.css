@@ -109,7 +109,7 @@ body * {
     max-width: 100%;
 }
 
-.vFixedHeaderCard .card-header {
+.vFixedHeaderCard .card-header, .vFixedHeaderCard .card-body {
     height: 140px; 
 }
- 
+

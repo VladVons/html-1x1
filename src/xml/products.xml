@@ -2,13 +2,13 @@
 <div class="container pb-3">
     <div class="vTitle">Products</div>
     <div class="row">
-        <div class="col-lg-2 mb-2 d-flex">
+        <div class="col-lg-2 mb-2">
             <div class="card vFixedHeaderCard">
                 <div class="card-header">
                     <img src="assets/img/product1.jpg" class="vFixedHeightImage" alt="Card Image">
                 </div>
                 <div class="card-body d-flex flex-column vBgSlave">
-                    <h5 class="card-title">DVI cabel 1.8m</h5>
+                    <h5 class="card-title">DVI cabel 1.8m silver</h5>
                     <p class="card-text mb-4">Is a manmade waterway dug in the early 1600's and now displays many landmark</p>
                 </div>
                 <div class="card-footer d-flex flex-column vBgMaster">
@@ -19,7 +19,7 @@
             </div>
           </div>
 
-        <div class="col-lg-2 mb-2 d-flex">
+        <div class="col-lg-2 mb-2">
             <div class="card vFixedHeaderCard">
                 <div class="card-header">
                     <img src="assets/img/product2.jpg" class="vFixedHeightImage" alt="Card Image">
@@ -39,7 +39,7 @@
             </div>
         </div>
 
-        <div class="col-lg-2 mb-2 d-flex">
+        <div class="col-lg-2 mb-2">
             <div class="card vFixedHeaderCard">
                 <div class="card-header">
                     <img src="assets/img/product3.jpg" class="vFixedHeightImage" alt="Card Image">
@@ -56,7 +56,7 @@
                 </div>
         </div>
 
-        <div class="col-lg-2 mb-2 d-flex">
+        <div class="col-lg-2 mb-2">
             <div class="card vFixedHeaderCard">
                 <div class="card-header">
                     <img src="assets/img/product4.jpg" class="vFixedHeightImage"  alt="Card Image">
@@ -73,7 +73,7 @@
             </div>
         </div>
 
-        <div class="col-lg-2 mb-2 d-flex">
+        <div class="col-lg-2 mb-2">
             <div class="card vFixedHeaderCard">
                 <div class="card-header">
                     <img src="assets/img/product5.jpg" class="vFixedHeightImage" alt="Card Image">
@@ -90,7 +90,7 @@
             </div>
         </div>
 
-        <div class="col-lg-2 mb-2 d-flex">
+        <div class="col-lg-2 mb-2">
             <div class="card vFixedHeaderCard">
                 <div class="card-header">
                     <img src="assets/img/product6.jpg" class="vFixedHeightImage" alt="Card Image" >
