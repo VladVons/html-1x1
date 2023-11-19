@@ -22,3 +22,4 @@ bootstrap eCommerce template written from scratch
 - product 
 - sitemap
 - timer_modal
+- tooltip
