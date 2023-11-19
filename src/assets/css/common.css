@@ -103,3 +103,9 @@ body * {
 .vFeatures p:nth-child(odd) {
     background-color: var(--colorBgBody);
 }
+
+.fixed-height-image {
+    max-height: 120px;
+    max-width: 100%;
+    width: auto;
+}
