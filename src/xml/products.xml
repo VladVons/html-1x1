@@ -5,15 +5,14 @@
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
                 <div class="card-header">
-                    <img src="assets/img/product1.jpg" class="vFixedHeightImage" alt="Card Image">
+                    <img src="assets/img/product1.jpg" alt="Card Image">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">DVI cabel 1.8m silver</h5>
-                    <p class="card-text mb-4">Is a manmade waterway dug in the early 1600's and now displays many landmark</p>
+                    <div class="card-title">DVI cabel 1.8m-2 silver</div>
                 </div>
                 <div class="card-footer">
                     <h4 class="fw-bold">123 грн</h4>
-                    <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
+                    <a href="#" class="btn btn-primary stretched-link">View</a>
                     <p>mdm</p>
                 </div>
             </div>
@@ -22,18 +21,18 @@
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
                 <div class="card-header">
-                    <img src="assets/img/product2.jpg" class="vFixedHeightImage" alt="Card Image">
+                    <img src="assets/img/product2.jpg" alt="Card Image">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">DVI cabel 1.8m</h5>
+                    <div class="card-title">DVI cabel 1.8m</div>
                     <p class="card-text mb-4">Near Afionas village</p>
                 </div>
                 <div class="card-footer">
                     <span class="d-flex">
                         <h4 class="fw-bold text-danger">123 грн&nbsp;</h4>
-                        <h2 class="text-decoration-line-through"> 150 грн</h2>
+                        <h5 class="text-decoration-line-through"> 150</h5>
                     </span>
-                    <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
+                    <a href="#" class="btn btn-primary stretched-link">View</a>
                     <p>mdm</p>
                 </div>
             </div>
@@ -42,15 +41,15 @@
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
                 <div class="card-header">
-                    <img src="assets/img/product3.jpg" class="vFixedHeightImage" alt="Card Image">
+                    <img src="assets/img/product3.jpg" alt="Card Image">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">USB flash memory 64Gb</h5>
+                    <div class="card-title">USB flash memory 64Gb</div>
                     <p class="card-text mb-4">Near Afionas village</p>
                 </div>
                 <div class="card-footer">
                     <h4 class="fw-bold">123 грн</h4>
-                    <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
+                    <a href="#" class="btn btn-primary stretched-link">View</a>
                     <p>mdm</p>
                 </div>
                 </div>
@@ -59,32 +58,15 @@
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
                 <div class="card-header">
-                    <img src="assets/img/product4.jpg" class="vFixedHeightImage"  alt="Card Image">
+                    <img src="assets/img/product4.jpg" alt="Card Image">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">USB flash memory 64Gb</h5>
+                    <div class="card-title">USB flash memory 64Gb</div>
                     <p class="card-text mb-4">Near Afionas village</p>
                 </div>
                 <div class="card-footer">
                     <h4 class="fw-bold">123 грн</h4>
-                    <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
-                    <p>mdm</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-2 mb-2">
-            <div class="card vCard">
-                <div class="card-header">
-                    <img src="assets/img/product5.jpg" class="vFixedHeightImage" alt="Card Image">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">DVI cabel 1.8m</h5>
-                    <p class="card-text mb-4">Near Afionas village</p>
-                </div>
-                <div class="card-footer">
-                    <h4 class="fw-bold">123 грн</h4>
-                    <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
+                    <a href="#" class="btn btn-primary stretched-link">View</a>
                     <p>mdm</p>
                 </div>
             </div>
@@ -93,15 +75,32 @@
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
                 <div class="card-header">
-                    <img src="assets/img/product6.jpg" class="vFixedHeightImage" alt="Card Image" >
+                    <img src="assets/img/product5.jpg" alt="Card Image">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">USB flash memory 64Gb</h5>
+                    <div class="card-title">DVI cabel 1.8m</div>
+                    <p class="card-text mb-4">Near Afionas village</p>
+                </div>
+                <div class="card-footer">
+                    <h4 class="fw-bold">123 грн</h4>
+                    <a href="#" class="btn btn-primary stretched-link">View</a>
+                    <p>mdm</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 mb-2">
+            <div class="card vCard">
+                <div class="card-header">
+                    <img src="assets/img/product6.jpg" alt="Card Image" >
+                </div>
+                <div class="card-body">
+                    <div class="card-title">USB flash memory 64Gb</div>
                     <p>Is a manmade waterway dug in the early 1600's and now displays many landmark</p>
                 </div>
                 <div class="card-footer">
                     <h4 class="fw-bold">123 грн</h4>
-                    <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
+                    <a href="#" class="btn btn-primary stretched-link">View</a>
                     <p>mdm</p>
                 </div>
             </div>

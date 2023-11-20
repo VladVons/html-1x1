@@ -15,7 +15,7 @@ body {
 }
 
 body * {
-  font: var(--font-roboto);
+  /* font: var(--font-roboto); */
 }
 
 .btn {
@@ -104,18 +104,19 @@ body * {
     background-color: var(--colorBgBody);
 }
 
-.vFixedHeightImage {
-    max-height: 120px;
+/*-- card --*/
+.vCard img {
+    max-height: 210px;
     max-width: 100%;
 }
 
 .vCard .card-header{
-    height: 140px; 
+    height: 220px; 
     background-color: var(--colorBgMaster);
 }
 
 .vCard .card-body {
-    height: 170px;
+    height: 150px;
     background-color: var(--colorBgSlave);
 }
 
