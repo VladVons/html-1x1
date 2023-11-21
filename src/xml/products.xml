@@ -21,7 +21,7 @@
 
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
-                <div class="card-header">
+                <div class="card-header vImgCenter">
                     <a href="#"><img src="assets/img/product2.jpg" alt="Card Image"></a>
                 </div>
                 <div class="card-body">
@@ -42,7 +42,7 @@
 
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
-                <div class="card-header">
+                <div class="card-header vImgCenter">
                     <a href="#"><img src="assets/img/product3.jpg" alt="Card Image"></a>
                 </div>
                 <div class="card-body">
@@ -60,7 +60,7 @@
 
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
-                <div class="card-header">
+                <div class="card-header vImgCenter">
                     <a href="#"><img src="assets/img/product4.jpg" alt="Card Image"></a>
                 </div>
                 <div class="card-body">
@@ -78,7 +78,7 @@
 
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
-                <div class="card-header">
+                <div class="card-header vImgCenter">
                     <a href="#"><img src="assets/img/product5.jpg" alt="Card Image"></a>
                 </div>
                 <div class="card-body">
@@ -96,7 +96,7 @@
 
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
-                <div class="card-header">
+                <div class="card-header vImgCenter">
                     <a href="#"><img src="assets/img/product6.jpg" alt="Card Image" ></a>
                 </div>
                 <div class="card-body">
