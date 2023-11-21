@@ -17,12 +17,12 @@
                 <img class="border mt-2" src="assets/img/product1.jpg" id="viMainImg" alt="Product Image">
             </div>
             <div class="border-top mt-3 vProductThumbs_X">
-                <img src="assets/img/product1.jpg" class="img-thumbnail" onclick="change_image(this)" alt="Thumbnail 1">
-                <img src="assets/img/product2.jpg" class="img-thumbnail" onclick="change_image(this)" alt="Thumbnail 2">
-                <img src="assets/img/product3.jpg" class="img-thumbnail" onclick="change_image(this)" alt="Thumbnail 2">
-                <img src="assets/img/product4.jpg" class="img-thumbnail" onclick="change_image(this)" alt="Thumbnail 2">
-                <img src="assets/img/product5.jpg" class="img-thumbnail" onclick="change_image(this)" alt="Thumbnail 2">
-                <img src="assets/img/product6.jpg" class="img-thumbnail" onclick="change_image(this)" alt="Thumbnail 4">
+                <img src="assets/img/product1.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 1">
+                <img src="assets/img/product2.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 2">
+                <img src="assets/img/product3.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 2">
+                <img src="assets/img/product4.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 2">
+                <img src="assets/img/product5.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 2">
+                <img src="assets/img/product6.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 4">
             </div>
         </div>
 
@@ -36,13 +36,15 @@
             <p>Category: <a href="#">Cabels</a></p>
             <p>On stock: 2</p>
             <p>Seller: <a href="#">MDM</a></p>
-            <p class="h1 text-danger">$21</p>
+            <p class="h3 text-danger">$21</p>
             <p>
                 <span class="h3 text-decoration-line-through">$59</span>
                 40% OFF
             </p>
 
-            <button type="button" class="btn btn-primary mt-3 viAddToCart" data-name="DVI cabel 1.8m" data-price="123" data-img="assets/img/product1.jpg"><i class="fa fa-shopping-cart m-1"></i>Add to cart</button>
+            <button type="button" class="btn btn-primary mt-3 viAddToCart" data-name="DVI cabel 1.8m" data-price="123" data-img="assets/img/product1.jpg">
+                <i class="fa fa-shopping-cart m-1"></i>Add to cart
+            </button>
         </div>
     </div>
 

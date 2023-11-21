@@ -82,7 +82,7 @@ function buildCart() {
                 <a href="#"><img class="img-fluid rounded-3" style="width: 80px" src="${val.Img}" alt="image xyz"></a>
             </div>
             <div class="col-md-3">
-                <h4>${val.Name}</h4>
+                <p>${val.Name}</p>
             </div>
             <div class="col-md-1">
                 <input type='number' class='form-control vInputQty viItemQty' data-name='${val.Name}' value='${val.Qty}'>
