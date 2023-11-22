@@ -3,7 +3,6 @@
     top: 0%;
     margin: 0 1px;
     border-width: 0;
-
 }
 
 /* desktop */
@@ -16,7 +15,11 @@
     .navbar.fixed-top {
         position: fixed;
         width: 100%;
-      
+        box-shadow: 0 2px 10px var(--colorBgBtn);
+    }
+
+    .vSearch {
+        width: 500px;
     }
 }
 
@@ -29,18 +32,7 @@
 
     .navbar.fixed-top {
         position: static;
-      
+        box-shadow: none;
+        box-shadow: 0 2px 10px var(--colorBgBtn);
     }
-}
-.nav-bar-custom{
-    background-color: #125763;
-}
-.fa-bars-custom{
-    font-size: 1.7em;
-    color: #ffffff;
-    background-color: #125763;
-}
-.fa-dollar-sign{
-    font-size: 1.4em;
-    color: #ffffff; 
 }

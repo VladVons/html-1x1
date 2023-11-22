@@ -1,17 +1,17 @@
 <!-- header + -->
-<nav class="navbar navbar-expand-lg fixed-top nav-bar-custom">
-    <div class="container-fluid">
-        <div class="d-flex col-lg-2 order-1">
-             <a href="#" class="start-0">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark vFooter">
+    <div class="container">
+        <div class="d-flex">
+           <a href="#">
                 <picture>
                     <source media="(min-width: 465px)" srcset="assets/img/logo-1x1.png">
                     <img src="assets/img/logo-x.png" alt="Your Logo" height="45" id="viLogo">
                 </picture>
             </a>
-       
+
             <ul class="navbar-nav" title="category">
                 <li class="nav-item dropdown" id="viMainNavbar">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  href="#"> <i class="fa fa-bars fa-bars-custom" >Каталог</i></a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  href="#"><i class="fa fa-bars" style="font-size: 2.0em;"></i></a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="/">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a> </li>
@@ -29,17 +29,16 @@
                     </ul>
                 </li>
             </ul>
-        </div>
-             <div class="d-flex col-12 col-md-7 order-3 order-md-2">
-            <form role="search" action="/submit" method="post" class="col-12">
-                <div class="input-group ">
-                    <input type="text" class="form-control" placeholder="пошук">
+
+            <form role="search" action="/submit" method="post">
+                <div class="input-group vSearch">
+                    <input type="text" class="form-control" placeholder="search">
                     <button class="btn btn-block" type="submit"><i class="fa fa-search" title="search"></i></button>
                 </div>
             </form>
         </div>
 
-        <div class="d-flex col-lg-2 order-2 order-md-3">
+        <div class="d-flex">
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cartModal" id="viCartModal">
                 <i class="fa fa-shopping-cart" title="shoping cart"></i>
                 <span class="badge vBgBtn viTotalCount">3</span>
@@ -60,4 +59,3 @@
   </div>
 </nav>
 <!-- header - -->
-<br><br><br>
