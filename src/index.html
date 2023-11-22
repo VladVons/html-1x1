@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <!-- navbar-fixed + -->
+    <!-- header + -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark vFooter">
     <div class="container">
         <div class="d-flex">
@@ -23,7 +23,7 @@
                 </picture>
             </a>
 
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" title="category">
                 <li class="nav-item dropdown" id="viMainNavbar">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  href="#"><i class="fa fa-bars" style="font-size: 2.0em;"></i></a>
                     <ul class="dropdown-menu">
@@ -47,20 +47,20 @@
             <form role="search" action="/submit" method="post">
                 <div class="input-group vSearch">
                     <input type="text" class="form-control" placeholder="search">
-                    <button class="btn btn-block" type="submit"><i class="fa fa-search"></i></button>
+                    <button class="btn btn-block" type="submit"><i class="fa fa-search" title="search"></i></button>
                 </div>
             </form>
         </div>
 
         <div class="d-flex">
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cartModal" id="viCartModal">
-                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-shopping-cart" title="shoping cart"></i>
                 <span class="badge vBgBtn viTotalCount">3</span>
             </button>
 
             <ul class="navbar-nav">
                 <li class="nav-item dropdown ms-2">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fa fa-dollar"></i></a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fa fa-dollar-sign" title="currency"></i></a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">uah</a></li>
                         <li><a class="dropdown-item" href="#">usd</a></li>
@@ -72,7 +72,7 @@
 
   </div>
 </nav>
-<!--  navbar-fixed - -->
+<!-- header - -->
 
     <!-- carousel + -->
 <div class="container pb-3">
@@ -160,79 +160,116 @@
 <div class="container pb-3">
     <div class="vTitle">Products</div>
     <div class="row">
-
-      <div class="col-lg-2 mb-3 d-flex align-items-stretch">
-        <div class="card">
-          <img src="assets/img/product1.jpg" class="card-img-top" alt="Card Image">
-          <div class="card-body d-flex flex-column vBgSlave">
-            <h4>123 грн</h4>
-            <h5 class="card-title">DVI cabel 1.8m</h5>
-            <p class="card-text mb-4">Is a manmade waterway dug in the early 1600's and now displays many landmark</p>
-            <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
+        <div class="col-lg-2 mb-2">
+            <div class="card vCard">
+                <div class="card-header">
+                    <a href="#"><img src="assets/img/product1.jpg" alt="Card Image"></a>
+                </div>
+                <div class="card-body">
+                    <a href="#">Cable</a>
+                    <div class="card-title">DVI cabel 1.8m-2 silver</div>
+                </div>
+                <div class="card-footer">
+                    <h4 class="fw-bold">123 грн</h4>
+                    <hr class="mt-1"/>
+                    <a href="#">mdm</a>
+                </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="col-lg-2 mb-3 d-flex align-items-stretch">
-        <div class="card">
-          <img src="assets/img/product1.jpg" class="card-img-top" alt="Card Image">
-          <div class="card-body d-flex flex-column vBgSlave">
-            <h4>123 грн</h4>
-            <h5 class="card-title">DVI cabel 1.8m</h5>
-            <p class="card-text mb-4">Near Afionas village</p>
-            <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
-          </div>
+        <div class="col-lg-2 mb-2">
+            <div class="card vCard">
+                <div class="card-header vImgCenter">
+                    <a href="#"><img src="assets/img/product2.jpg" alt="Card Image"></a>
+                </div>
+                <div class="card-body">
+                    <a href="#">Flash memory</a>
+                    <div class="card-title">USB flash 64Gb</div>
+                    <p class="card-text mb-4">Near Afionas village</p>
+                </div>
+                <div class="card-footer">
+                    <span class="d-flex">
+                        <h4 class="fw-bold text-danger">123 грн&nbsp;</h4>
+                        <h5 class="text-decoration-line-through"> 150</h5>
+                    </span>
+                    <hr class="mt-1"/>
+                    <a href="#">mdm</a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="col-lg-2 mb-3 d-flex align-items-stretch">
-        <div class="card">
-          <img src="assets/img/product2.jpg" class="card-img-top" alt="Card Image">
-          <div class="card-body d-flex flex-column vBgSlave">
-            <h4>123 грн</h4>
-            <h5 class="card-title">USB flash memory 64Gb</h5>
-            <p class="card-text mb-4">Near Afionas village</p>
-            <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
-          </div>
+        <div class="col-lg-2 mb-2">
+            <div class="card vCard">
+                <div class="card-header vImgCenter">
+                    <a href="#"><img src="assets/img/product3.jpg" alt="Card Image"></a>
+                </div>
+                <div class="card-body">
+                    <a href="#">Desktop</a>
+                    <div class="card-title">HP 7323/2GHz/8Gb/250SSD</div>
+                    <p class="card-text mb-4">Near Afionas village</p>
+                </div>
+                <div class="card-footer">
+                    <h4 class="fw-bold">123 грн</h4>
+                    <hr class="mt-1"/>
+                    <a href="#">pc-data</a>
+                </div>
+                </div>
         </div>
-      </div>
 
-      <div class="col-lg-2 mb-3 d-flex align-items-stretch">
-        <div class="card">
-          <img src="assets/img/product2.jpg" class="card-img-top" alt="Card Image">
-          <div class="card-body d-flex flex-column vBgSlave">
-            <h4>123 грн</h4>
-            <h5 class="card-title">USB flash memory 64Gb</h5>
-            <p class="card-text mb-4">Near Afionas village</p>
-            <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
-          </div>
+        <div class="col-lg-2 mb-2">
+            <div class="card vCard">
+                <div class="card-header vImgCenter">
+                    <a href="#"><img src="assets/img/product4.jpg" alt="Card Image"></a>
+                </div>
+                <div class="card-body">
+                    <a href="#">Desktop</a>
+                    <div class="card-title">HP 7323/2GHz/8Gb/250SSD</div>
+                    <p class="card-text mb-4">Near Afionas village</p>
+                </div>
+                <div class="card-footer">
+                    <h4 class="fw-bold">123 грн</h4>
+                    <hr class="mt-1"/>
+                    <a href="#">pc-data</a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="col-lg-2 mb-3 d-flex align-items-stretch">
-        <div class="card">
-          <img src="assets/img/product1.jpg" class="card-img-top" alt="Card Image">
-           <div class="card-body d-flex flex-column vBgSlave">
-             <h4>123 грн</h4>
-            <h5 class="card-title">DVI cabel 1.8m</h5>
-            <p class="card-text mb-4">Near Afionas village</p>
-            <a href="#" class="btn btn-primary mt-auto stretched-link">View</a>
-          </div>
+        <div class="col-lg-2 mb-2">
+            <div class="card vCard">
+                <div class="card-header vImgCenter">
+                    <a href="#"><img src="assets/img/product5.jpg" alt="Card Image"></a>
+                </div>
+                <div class="card-body">
+                    <a href="#">Desktop</a>
+                    <div class="card-title">HP 7323/2GHz/8Gb/250SSD</div>
+                    <p class="card-text mb-4">Near Afionas village</p>
+                </div>
+                <div class="card-footer">
+                    <h4 class="fw-bold">123 грн</h4>
+                    <hr class="mt-1"/>
+                    <a href="#">pc-data</a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="col-lg-2 mb-3 d-flex">
-        <div class="card">
-          <img src="assets/img/product2.jpg" alt="Card Image" >
-          <div class="card-body d-flex flex-column vBgSlave">
-            <h4>123 грн</h4>
-            <h5 class="card-title">USB flash memory 64Gb</h5>
-            <p>Is a manmade waterway dug in the early 1600's and now displays many landmark</p>
-            <a href="#" class="btn btn-primary stretched-link">View</a>
-          </div>
+        <div class="col-lg-2 mb-2">
+            <div class="card vCard">
+                <div class="card-header vImgCenter">
+                    <a href="#"><img src="assets/img/product6.jpg" alt="Card Image" ></a>
+                </div>
+                <div class="card-body">
+                    <a href="#">Desktop</a>
+                    <div class="card-title">HP 7323/2GHz/8Gb/250SSD</div>
+                    <p>Is a manmade waterway dug in the early 1600's and now displays many landmark</p>
+                </div>
+                <div class="card-footer">
+                    <h4 class="fw-bold">123 грн</h4>
+                    <hr class="mt-1"/>
+                    <a href="#">pc-data</a>
+                </div>
+            </div>
         </div>
-      </div>
-  </div>
+    </div>
 </div>
 <!--  products - -->
 
@@ -267,7 +304,7 @@
                 <span>
                     <p class="text-muted">2023.11.13 <a href="#">Author</a></p>
                 </span>
-                <a href="#" class="btn btn-primary">Read more ...</a>
+                <a href="#" class="btn btn-primary"><i class="fa fa-book-open m-1"></i>Read more ...</a>
             </div>
         </div>
     </div>
@@ -287,12 +324,18 @@
 <div class="container pb-2">
     <div class="vTitle">Product</div>
 
-    <div class="row">
+    <div class="row vProduct">
         <div class="col-md-6 text-center vBgMaster">
-            <img class="border mt-2" src="assets/img/product1.jpg" id="viMainImg" width="350" alt="Product Image">
-            <div class="border-top mt-3">
-                <img src="assets/img/product1.jpg" class="img-thumbnail" width="80" onclick="change_image(this)" alt="Thumbnail 1">
-                <img src="assets/img/product2.jpg" class="img-thumbnail" width="80" onclick="change_image(this)" alt="Thumbnail 2">
+            <div class="vProductImg">
+                <img class="border mt-2" src="assets/img/product1.jpg" id="viMainImg" alt="Product Image">
+            </div>
+            <div class="border-top mt-3 vProductThumbs_X">
+                <img src="assets/img/product1.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 1">
+                <img src="assets/img/product2.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 2">
+                <img src="assets/img/product3.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 2">
+                <img src="assets/img/product4.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 2">
+                <img src="assets/img/product5.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 2">
+                <img src="assets/img/product6.jpg" class="img-thumbnail" onclick="changeImage(this)" alt="Thumbnail 4">
             </div>
         </div>
 
@@ -302,17 +345,19 @@
                 <span>Code: <strong>123/456</strong></span>
             </div>
 
-            <h3>DVI cabel 1.8m</h5>
-            <p>Category: Cabels</p>
+            <h3>DVI cabel 1.8m</h3>
+            <p>Category: <a href="#">Cabels</a></p>
             <p>On stock: 2</p>
-            <p>Seller: MDM</p>
-            <p class="h1 text-danger">$21</p>
+            <p>Seller: <a href="#">MDM</a></p>
+            <p class="h3 text-danger">$21</p>
             <p>
                 <span class="h3 text-decoration-line-through">$59</span>
                 40% OFF
             </p>
 
-            <button type="button" class="btn btn-primary mt-3 viAddToCart" data-name="DVI cabel 1.8m" data-price="123">Add to cart</button>
+            <button type="button" class="btn btn-primary mt-3 viAddToCart" data-name="DVI cabel 1.8m" data-price="123" data-img="assets/img/product1.jpg">
+                <i class="fa fa-shopping-cart m-1"></i>Add to cart
+            </button>
         </div>
     </div>
 
@@ -328,7 +373,7 @@
 
         <div class="tab-content mt-1">
             <div class="tab-pane fade show active m-3" id="features" role="tabpanel" aria-labelledby="features-tab">
-                <h4 class="mt-2">Section vKeyValue</h4>
+                <h4 class="fw-bold mt-2 ">Section vKeyValue</h4>
                 <div class="vKeyValue">
                     <p>length</p><p>1.8m</p>
                     <p>weight</p><p>0.2 kg</p>
@@ -338,7 +383,7 @@
                 </div>
 
                 <div class="vFeatures mt-2">
-                   <h4 >Section vFeatures</h4>
+                   <h4 class="fw-bold">Section vFeatures</h4>
                     <p>length: 1.8m</p>
                     <p>weight: 0.2 rg</p>
                     <p>wires: 16</p>
@@ -372,7 +417,7 @@
             <div class="modal-footer">
                 <p>Total sum:<span class="m-2 viTotalSum">1234.5</span></p>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger viClearAll">Clear all</button>
+                <button type="button" class="btn btn-danger viClearAll"><i class="fa fa-trash m-1"></i>Clear all</button>
             </div>
         </div>
     </div>
@@ -427,7 +472,7 @@
                 </div>
             </div>
             <hr class="mt-3"/>
-            <button type="button" class="btn btn-primary viClearAll">Clear all</button>
+            <button type="button" class="btn btn-primary viClearAll"><i class="fa fa-trash m-1"></i>Clear all</button>
         </div>
         <div class="col-md-12 col-lg-4 p-3 vBgSlave">
             <h3>Summary</h3>
@@ -476,7 +521,7 @@
                                 <input type="text" class="form-control" id="cvv" placeholder="123" required>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Pay</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-money-bill-wave m-1"></i>Pay</button>
                     </form>
                 </div>
             </div>
@@ -494,7 +539,7 @@
                 <div class="pt-2">
                     <p><i class="fa fa-location-arrow m-1"></i>46035, Тернопіль, Руська 41</p>
                     <p><i class="fa fa-phone m-1"></i>096-7007444</p>
-                    <p><i class="fa fa-envelope-o m-1"></i>info@used.1x1.com.ua</p>
+                    <p><i class="fa fa-envelope m-1"></i>info@used.1x1.com.ua</p>
                 </div>
             </div>
             <div class="col-md-9 pb-2 vBgMaster">
@@ -505,8 +550,7 @@
         <div class="row mt-1">
             <div class="col-md-3 vBgSlave">
                 <div>
-                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
-                    <h2>Contact Us</h2>
+                    <h2><i class="fa fa-envelope m-1"></i>Contact Us</h2>
                     <h4>We would love to hear from you !</h4>
                 </div>
             </div>
@@ -525,7 +569,7 @@
                         <textarea class="form-control" rows="5" id="comment"></textarea>
                     </div>
                     <div class="mt-4">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o m-1"></i>Send</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-envelope m-1"></i>Send</button>
                     </div>
                 </form>
             </div>
@@ -543,8 +587,8 @@
             <h2>404 Not Found</h2>
             <p>Sorry, an error has occured, Requested page not found!</p>
             <div>
-                <a href="#" class="btn btn-primary btn-lg m-1"><i class="fa fa-home m-1"></i>Home</a>
-                <a href="#" class="btn btn-primary btn-lg m-1"><i class="fa fa-envelope-o m-1"></i>Report us</a>
+                <a href="#" class="btn btn-primary m-1"><i class="fa fa-home m-1"></i>Home</a>
+                <a href="#" class="btn btn-primary m-1"><i class="fa fa-envelope m-1"></i>Report us</a>
             </div>
         </div>
     </div>
@@ -567,7 +611,7 @@
           <label>Password</label>
           <input type="password" class="form-control" id="password" placeholder="enter password">
         </div>
-        <button type="submit" class="btn btn-primary w-100">Login</button>
+        <button type="submit" class="btn btn-primary w-100"><i class="fa fa-user m-1"></i>Login</button>
       </form>
     </div>
   </div>
@@ -592,9 +636,7 @@
 <!--  timer_modal - -->
 
     <!-- gotop + -->
-<button class="btn btn-primary" id="vBtn-GoTop" onclick="goToTop()">
-  Go top <i class="fa fa-arrow-up"></i>
-</button>
+<button class="btn btn-primary" id="vBtn-GoTop" onclick="goToTop()"><i class="fa fa-arrow-up m-1"></i>Go top</button>
 <!--  gotop - -->
 
     <!-- footer + -->
@@ -607,9 +649,11 @@
     </a>
         <h4>Маркет брендової компютерної техніки</h4>
         <p>
-          <a href="#" role="button"><i class="fa fa-facebook m-1" style="font-size: 2.0rem;"></i></a>
-          <a href="#" role="button"><i class="fa fa-telegram m-1" style="font-size: 2.0rem;"></i></a>
-            </p>
+          <a href="#" role="button"><i class="fab fa-facebook m-1" style="font-size: 2.0rem;" title="facebook"></i></a>
+          <a href="#" role="button"><i class="fab fa-telegram m-1" style="font-size: 2.0rem;" title="telegram"></i></a>
+          <a href="#" role="button"><i class="fab fa-viber m-1" style="font-size: 2.0rem;" title="viber"></i></a>
+
+        </p>
       </div>
       <div class="col-lg-3 col-xs-12">
         <h4 class="mt-lg-0 mt-sm-3">Посилання</h4>
@@ -622,12 +666,12 @@
         <h4 class="mt-lg-0 mt-sm-4">Розташування</h4>
         <p><i class="fa fa-location-arrow m-1"></i>46035, Тернопіль, Руська 41</p>
         <p><i class="fa fa-phone m-1"></i>096-7007444</p>
-        <p><i class="fa fa-envelope-o m-1"></i>info@used.1x1.com.ua</p>
+        <p><i class="fa fa-envelope m-1"></i>info@used.1x1.com.ua</p>
       </div>
     </div>
 
     <div class="border-top mt-2">
-      <p>© 2023 1x1. Всі права захищені</p>
+      <p><i class="fa fa-copyright m-1"></i>2023 1x1. Всі права захищені</p>
     </div>
   </div>
 </div>
