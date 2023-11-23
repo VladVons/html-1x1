@@ -33,7 +33,7 @@
             </div>
 
             <h3>DVI cabel 1.8m</h3>
-            <p>Category: <a href="#">Cabels</a></p>
+            <p>Category: <a href="#" class="h4">Cabels</a></p>
             <p>On stock: 2</p>
             <p>Seller: <a href="#">MDM</a></p>
             <p class="h3 text-danger">$21</p>
