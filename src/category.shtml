@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <title>1x1 snippets</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+
+  <body>
+    <!--#include file='xml/header.xml' -->
+    <!--#include file='xml/products.xml' -->
+    <!--#include file='xml/pagination.xml' -->
+    <!--#include file='xml/footer.xml' -->
+
+    <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/navbar.js"></script>
+  </body>
+</html>

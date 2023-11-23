@@ -42,7 +42,7 @@
                 40% OFF
             </p>
 
-            <button type="button" class="btn btn-primary mt-3 viAddToCart" data-name="DVI cabel 1.8m" data-price="123" data-img="assets/img/product1.jpg">
+            <button type="button" class="btn btn-primary mt-3 viAddToCart" data='{"id":"1", "name":"DVI cabel 1.8m", "price":123.0, "img":"assets/img/product1.jpg", "qty":1, "href":"#"}'>
                 <i class="fa fa-shopping-cart m-1"></i>Add to cart
             </button>
         </div>
