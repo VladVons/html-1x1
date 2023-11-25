@@ -9,16 +9,17 @@
                 </picture>
             </a>
 
-            <ul class="navbar-nav" title="category">
+            <ul class="navbar-nav" title="categories">
                 <li class="nav-item dropdown" id="viMainNavbar">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  href="#"><i class="fa fa-bars" style="font-size: 2.0em;"></i></a>
                     <ul class="dropdown-menu">
+
                         <li><a class="dropdown-item" href="/">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a> </li>
-                        <li> <hr class="dropdown-divider"> </li>
-                        <li> <a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"> </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                         <li class="nav-item dropdown">
-                            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown </a>
+                            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="/">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a> </li>
@@ -26,13 +27,18 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+
                     </ul>
                 </li>
             </ul>
 
-            <form role="search" action="/submit" method="post">
+            <form role="search" action="/submit.html" method="get">
                 <div class="input-group vSearch">
-                    <input type="text" class="form-control" placeholder="search">
+                    <input type="text" class="form-control" placeholder="search"  list="viSearchSuggest" id="viSearchInput">
+                         <datalist id="viSearchSuggest">
+                            <option value="ukraine">
+                            <option value="poland">
+                        </datalist>
                     <button class="btn btn-block" type="submit"><i class="fa fa-search" title="search"></i></button>
                 </div>
             </form>

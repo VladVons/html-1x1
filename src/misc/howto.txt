@@ -21,6 +21,16 @@ https://bootsnipp.com/search?q=contact
 a2enmod include
 systemctl restart apache2
 
+#--- apache enable python
+<Directory "/var/www/1x1.lan/src">
+    ...
+    Options ... ExecCGI
+    AddHandler cgi-script .py
+</Directory>
+
+a2enmod cgi
+systemctl restart apache2
+
 
 #---- fontawesome
 https://fontawesome.com/v5/download
