@@ -11,7 +11,7 @@ var searchSuggest = document.getElementById('viSearchSuggest');
 searchInput.addEventListener('input', function(aEvent) {
     var searchTerm = this.value.trim();
 
-    if (searchTerm.length > 1) {
+    if (searchTerm.length > 0) {
         var url = 'assets/cgi/search.py?q=' + encodeURIComponent(searchTerm);
 
     // fetch API
