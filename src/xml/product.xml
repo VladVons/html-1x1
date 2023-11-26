@@ -1,11 +1,9 @@
 <!-- product + -->
 <script>
-    const gData = {
-        "lang": {
-            "added_to_cart": "Added to cart",
-            "already_in_cart": "Already in cart"
-        }
-    }
+    gData.updValue("lang", {
+        "added_to_cart": "Added to cart",
+        "already_in_cart": "Already in cart"
+    })
 </script>
 
 <div class="container pb-2">

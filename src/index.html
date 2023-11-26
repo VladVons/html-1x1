@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.css">
     <link rel="stylesheet" href="assets/vendor/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="assets/js/app.js"></script>
+    <script>gData = new TDict()</script>
   </head>
 
   <body>
@@ -23,16 +26,17 @@
                 </picture>
             </a>
 
-            <ul class="navbar-nav" title="category">
+            <ul class="navbar-nav" title="categories">
                 <li class="nav-item dropdown" id="viMainNavbar">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  href="#"><i class="fa fa-bars" style="font-size: 2.0em;"></i></a>
                     <ul class="dropdown-menu">
+
                         <li><a class="dropdown-item" href="/">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a> </li>
-                        <li> <hr class="dropdown-divider"> </li>
-                        <li> <a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"> </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                         <li class="nav-item dropdown">
-                            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown </a>
+                            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="/">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a> </li>
@@ -40,13 +44,18 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+
                     </ul>
                 </li>
             </ul>
 
-            <form role="search" action="/submit" method="post">
+            <form role="search" action="/submit.html" method="get">
                 <div class="input-group vSearch">
-                    <input type="text" class="form-control" placeholder="search">
+                    <input type="text" class="form-control" placeholder="search"  list="viSearchSuggest" id="viSearchInput">
+                         <datalist id="viSearchSuggest">
+                            <option value="ukraine">
+                            <option value="poland">
+                        </datalist>
                     <button class="btn btn-block" type="submit"><i class="fa fa-search" title="search"></i></button>
                 </div>
             </form>
@@ -313,12 +322,10 @@
 
     <!-- product + -->
 <script>
-    const gData = {
-        "lang": {
-            "added_to_cart": "Added to cart",
-            "already_in_cart": "Already in cart"
-        }
-    }
+    gData.updValue("lang", {
+        "added_to_cart": "Added to cart",
+        "already_in_cart": "Already in cart"
+    })
 </script>
 
 <div class="container pb-2">
@@ -346,7 +353,7 @@
             </div>
 
             <h3>DVI cabel 1.8m</h3>
-            <p>Category: <a href="#">Cabels</a></p>
+            <p>Category: <a href="#" class="h4">Cabels</a></p>
             <p>On stock: 2</p>
             <p>Seller: <a href="#">MDM</a></p>
             <p class="h3 text-danger">$21</p>
@@ -355,7 +362,7 @@
                 40% OFF
             </p>
 
-            <button type="button" class="btn btn-primary mt-3 viAddToCart" data-name="DVI cabel 1.8m" data-price="123" data-img="assets/img/product1.jpg">
+            <button type="button" class="btn btn-primary mt-3 viAddToCart" data='{"id":"1", "name":"DVI cabel 1.8m", "price":123.0, "img":"assets/img/product1.jpg", "qty":1, "href":"#"}'>
                 <i class="fa fa-shopping-cart m-1"></i>Add to cart
             </button>
         </div>
@@ -679,10 +686,10 @@
 
 
     <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/app.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/cart.js"></script>
     <script src="assets/js/product.js"></script>
+    <script src="assets/js/search.js"></script>
     <script src="assets/js/gotop.js"></script>
     <script src="assets/js/timer_modal.js"></script>
   </body>
