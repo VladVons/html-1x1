@@ -32,9 +32,10 @@
                 </li>
             </ul>
 
-            <form role="search" action="/submit.html" method="get">
+            <form role="search" action="/search.html" method="get">
                 <div class="input-group vSearch">
-                    <input type="text" class="form-control" placeholder="search"  list="viSearchSuggest" id="viSearchInput">
+                    <input type="hidden" name="route" value="product0/search"/>
+                    <input type="text" class="form-control" name="q" placeholder="search" list="viSearchSuggest" id="viSearchInput"/>
                          <datalist id="viSearchSuggest">
                             <option value="ukraine">
                             <option value="poland">
