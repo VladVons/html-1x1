@@ -17,14 +17,14 @@ searchInput.addEventListener('input', function(aEvent) {
     // fetch API
     fetch(url)
         .then(response => response.json())
-        .then(data => displayResults(aEvent, data))
+        .then(data => displaySearchResults(aEvent, data))
         .catch(error => console.error('Error fetching data:', error));
     } else {
         searchSuggest.innerHTML = '';
     }
-    });
+})
 
-function displayResults(aEvent, aResults) {
+function displaySearchResults(aEvent, aResults) {
     searchSuggest.innerHTML = '';
 
     if (aResults.length > 0) {

@@ -1,0 +1,12 @@
+{
+    "0": [
+            {"id": 1, "products": 252, "title": "monitors for PC",      "href": "?category_id=1"},
+            {"id": 2, "products": 127, "title": "notebooks",            "href": "?category_id=2"},
+            {"id": 3, "products": 154, "title": "PC",                   "href": "?category_id=3"},
+            {"id": 8, "products": 2,   "title": "television",           "href": "?category_id=8"}
+    ], 
+    "3":  [
+            {"id": 4, "products": 140, "title": "workstations A", "href": "?category_id=4"},
+            {"id": 5, "products": 14,  "title": "workstations B", "href": "?category_id=5"}
+    ]
+}

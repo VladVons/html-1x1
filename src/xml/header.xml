@@ -10,7 +10,7 @@
             </a>
 
             <ul class="navbar-nav" title="categories">
-                <li class="nav-item dropdown" id="viMainNavbar">
+                <li class="nav-item dropdown" id="viMainNavbar1">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  href="#"><i class="fa fa-bars" style="font-size: 2.0em;"></i></a>
                     <ul class="dropdown-menu">
 
@@ -28,6 +28,16 @@
                             </ul>
                         </li>
 
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav" title="categories">
+                <li class="nav-item dropdown" id="viMainNavbar2">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="navbarCategoryClick()" href="#"><i class="fa fa-bars" style="font-size: 2.0em;"></i></a>
+                    <ul class="dropdown-menu" id="viMainNavbarItems">
+                        <li><a class="dropdown-item" href="#">item1 </a></li>
+                        <li><a class="dropdown-item" href="#">item2 </a></li>
                     </ul>
                 </li>
             </ul>
