@@ -9,12 +9,12 @@ function goToTop() {
 }
 
 window.onscroll = function() {
-  var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-  var goTopBtn = document.getElementById('vBtn-GoTop');
+    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    var goTopBtn = document.getElementById('viBtnGoTop');
 
-  if (scrollPosition > 100) {
-    goTopBtn.style.display = 'block';
-  } else {
-    goTopBtn.style.display = 'none';
-  }
+    if (scrollPosition > 100) {
+        goTopBtn.style.display = 'block';
+    } else {
+        goTopBtn.style.display = 'none';
+    }
 };
