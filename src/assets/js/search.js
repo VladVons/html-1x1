@@ -5,40 +5,52 @@ License: GNU, see LICENSE for more details
 */
 
 
-var searchInput = document.getElementById('viSearchInput');
-var searchSuggest = document.getElementById('viSearchSuggest');
+class TSearch {
+    constructor() {
+        this.timeout = null
 
-searchInput.addEventListener('input', function(aEvent) {
-    var searchTerm = this.value.trim();
+        this.elInput = document.getElementById('viSearchInput')
+        this.elInput.addEventListener('input', this.OnInput)
 
-    if (searchTerm.length > 0) {
-        var url = 'assets/cgi/search.py?q=' + encodeURIComponent(searchTerm);
-
-    // fetch API
-    fetch(url)
-        .then(response => response.json())
-        .then(data => displaySearchResults(aEvent, data))
-        .catch(error => console.error('Error fetching data:', error));
-    } else {
-        searchSuggest.innerHTML = '';
+        this.elSuggest = document.getElementById('viSearchSuggest')
     }
-})
 
-function displaySearchResults(aEvent, aResults) {
-    searchSuggest.innerHTML = '';
+    OnInput = function (aEvent) {
+        clearTimeout(this.timeout)
 
-    if (aResults.length > 0) {
-        aResults.forEach(function(aResult) {
-            var option = document.createElement('option');
-            option.value = aResult;
-            searchSuggest.appendChild(option);
-        });
-
-        var selectedValue = aEvent.target.value;
-        if (aResults.includes(selectedValue)) {
-            window.location.href = '?route=product0/search&q=' + encodeURIComponent(selectedValue);
+        var searchTerm = this.elInput.value.trim()
+        if (searchTerm.length > 0) {
+            this.timeout = setTimeout(() => {
+                //let url = 'assets/cgi/search.json'
+                let url = 'assets/cgi/search.py?q=' + encodeURIComponent(searchTerm)
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => this.displayResults(aEvent, data))
+                    .catch(error => console.error('Error fetching data:', error))
+            }, 500)
+        } else {
+            this.elSuggest.innerHTML = ''
         }
-    } else {
-        searchSuggest.innerHTML = '';
+    }.bind(this)
+
+    displayResults(aEvent, aResults) {
+        this.elSuggest.innerHTML = ''
+
+        if (aResults.length > 0) {
+            aResults.forEach(function(aResult) {
+                var option = document.createElement('option')
+                option.value = aResult
+                this.elSuggest.appendChild(option)
+            }.bind(this))
+
+            var selectedValue = aEvent.target.value
+            if (aResults.includes(selectedValue)) {
+                window.location.href = '?route=product0/search&q=' + encodeURIComponent(selectedValue)
+            }
+        } else {
+            this.elSuggest.innerHTML = ''
+        }
     }
 }
+
+new TSearch()

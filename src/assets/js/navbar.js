@@ -39,32 +39,26 @@ function navbarCategoryClick() {
         .catch(error => console.error('Error fetching data:', error))
 }
 
-function navbarSubmenu(options) {
+function navbarSubmenu(aOptions) {
     const defaultOption = {
         selector: "viMainNavbar"
     }
+    const Options = { ...defaultOption, ...aOptions }
+    var dropdowns = document.getElementById(Options.selector).getElementsByClassName("dropdown")
 
-    const bnOptions = { ...defaultOption, ...options };
+    Array.prototype.forEach.call(dropdowns, (item) => {
+        item.addEventListener("mouseover", function () {
+            this.classList.add("show")
+            const element = this.querySelector(".dropdown-menu")
+            element.classList.add("show")
+        })
 
-    init = function () {
-        var dropdowns = document.getElementById(bnOptions.selector).getElementsByClassName("dropdown");
-
-        Array.prototype.forEach.call(dropdowns, (item) => {
-            item.addEventListener("mouseover", function () {
-                this.classList.add("show");
-                const element = this.querySelector(".dropdown-menu");
-                element.classList.add("show");
-            });
-
-            item.addEventListener("mouseout", function () {
-                this.classList.remove("show");
-                const element = this.querySelector(".dropdown-menu");
-                element.classList.remove("show");
-            });
-        });
-  };
-
-  init();
+        item.addEventListener("mouseout", function () {
+            this.classList.remove("show")
+            const element = this.querySelector(".dropdown-menu")
+            element.classList.remove("show")
+        })
+    })
 }
 
 navbarSubmenu({"selector": "viMainNavbar1"})
