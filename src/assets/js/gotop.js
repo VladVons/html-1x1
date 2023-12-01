@@ -4,17 +4,18 @@ Author: Vladimir Vons <VladVons@gmail.com>
 License: GNU, see LICENSE for more details
 */
 
+
 function goToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
 window.onscroll = function() {
-    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-    var goTopBtn = document.getElementById('viBtnGoTop');
+    const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop
+    const goTopBtn = document.getElementById('viBtnGoTop')
 
     if (scrollPosition > 100) {
-        goTopBtn.style.display = 'block';
+        goTopBtn.style.display = 'block'
     } else {
-        goTopBtn.style.display = 'none';
+        goTopBtn.style.display = 'none'
     }
-};
+}

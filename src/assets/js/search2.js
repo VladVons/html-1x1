@@ -2,10 +2,12 @@
 Created: 2023.11.25
 Author: Vladimir Vons <VladVons@gmail.com>
 License: GNU, see LICENSE for more details
+
+as class
 */
 
 
-class TSearch {
+class TSearchNavbar {
     constructor() {
         this.timeout = null
 
@@ -18,11 +20,11 @@ class TSearch {
     OnInput = function (aEvent) {
         clearTimeout(this.timeout)
 
-        var searchTerm = this.elInput.value.trim()
+        const searchTerm = this.elInput.value.trim()
         if (searchTerm.length > 0) {
             this.timeout = setTimeout(() => {
-                //let url = 'assets/cgi/search.json'
-                let url = 'assets/cgi/search.py?q=' + encodeURIComponent(searchTerm)
+                //const url = 'assets/cgi/search.json'
+                const url = 'assets/cgi/search.py?q=' + encodeURIComponent(searchTerm)
                 fetch(url)
                     .then(response => response.json())
                     .then(data => this.displayResults(aEvent, data))
@@ -36,21 +38,19 @@ class TSearch {
     displayResults(aEvent, aResults) {
         this.elSuggest.innerHTML = ''
 
-        if (aResults.length > 0) {
+        if (aResults && aResults.length > 0) {
             aResults.forEach(function(aResult) {
-                var option = document.createElement('option')
+                let option = document.createElement('option')
                 option.value = aResult
                 this.elSuggest.appendChild(option)
             }.bind(this))
 
-            var selectedValue = aEvent.target.value
+            const selectedValue = aEvent.target.value
             if (aResults.includes(selectedValue)) {
                 window.location.href = '?route=product0/search&q=' + encodeURIComponent(selectedValue)
             }
-        } else {
-            this.elSuggest.innerHTML = ''
         }
     }
 }
 
-new TSearch()
+new TSearchNavbar()

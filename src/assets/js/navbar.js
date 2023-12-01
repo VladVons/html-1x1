@@ -8,12 +8,12 @@ License: GNU, see LICENSE for more details
 function navbarCategoryClick() {
     function Recurs(aData, aId) {
         let Res = []
-        for (let x of aData[aId]) {
+        for (const x of aData[aId]) {
             if (x.id in aData) {
                 Res.push('<li class="nav-item dropdown">')
                 Res.push(`<a class="dropdown-item dropdown-toggle" href="${x.href}" role="button" data-bs-toggle="dropdown">${x.title} (${x.products})</a>`)
                 Res.push('<ul class="dropdown-menu">')
-                let ResR = Recurs(aData, x.id)
+                const ResR = Recurs(aData, x.id)
                 Res = Res.concat(ResR)
                 Res.push('</ul>')
                 Res.push('</li>')
@@ -25,14 +25,14 @@ function navbarCategoryClick() {
     }
 
     function displayResults(aData) {
-        let Data = Recurs(aData, 0)
-        let navbarItems = document.getElementById('viMainNavbarItems');
+        const Data = Recurs(aData, 0)
+        const navbarItems = document.getElementById('viMainNavbarItems')
         navbarItems.innerHTML = Data.join('\n')
         navbarSubmenu({"selector": "viMainNavbar2"})
     }
 
-    //var url = 'assets/cgi/category.json'
-    var url = 'assets/cgi/category.py'
+    //const url = 'assets/cgi/category.json'
+    const url = 'assets/cgi/category.py'
     fetch(url)
         .then(response => response.json())
         .then(data => displayResults(data))
@@ -44,7 +44,7 @@ function navbarSubmenu(aOptions) {
         selector: "viMainNavbar"
     }
     const Options = { ...defaultOption, ...aOptions }
-    var dropdowns = document.getElementById(Options.selector).getElementsByClassName("dropdown")
+    const dropdowns = document.getElementById(Options.selector).getElementsByClassName("dropdown")
 
     Array.prototype.forEach.call(dropdowns, (item) => {
         item.addEventListener("mouseover", function () {
