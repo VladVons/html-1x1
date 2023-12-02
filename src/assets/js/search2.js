@@ -27,7 +27,7 @@ class TSearchNavbar {
                 const url = 'assets/cgi/search.py?q=' + encodeURIComponent(searchTerm)
                 fetch(url)
                     .then(response => response.json())
-                    .then(data => this.displayResults(aEvent, data))
+                    .then(data => this.displayResult(aEvent, data))
                     .catch(error => console.error('Error fetching data:', error))
             }, 500)
         } else {
@@ -35,7 +35,7 @@ class TSearchNavbar {
         }
     }.bind(this)
 
-    displayResults(aEvent, aResults) {
+    displayResult(aEvent, aResults) {
         this.elSuggest.innerHTML = ''
 
         if (aResults && aResults.length > 0) {

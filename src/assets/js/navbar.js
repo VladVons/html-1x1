@@ -24,7 +24,7 @@ function navbarCategoryClick() {
         return Res
     }
 
-    function displayResults(aData) {
+    function displayResult(aData) {
         const Data = Recurs(aData, 0)
         const navbarItems = document.getElementById('viMainNavbarItems')
         navbarItems.innerHTML = Data.join('\n')
@@ -35,7 +35,7 @@ function navbarCategoryClick() {
     const url = 'assets/cgi/category.py'
     fetch(url)
         .then(response => response.json())
-        .then(data => displayResults(data))
+        .then(data => displayResult(data))
         .catch(error => console.error('Error fetching data:', error))
 }
 

@@ -1,3 +1,9 @@
+/*
+Created: 2023.11.10
+Author: Vladimir Vons <VladVons@gmail.com>
+License: GNU, see LICENSE for more details
+*/
+
 document.addEventListener('DOMContentLoaded', function() {
     const Min = 200 * 1000
     const Max = 300 * 1000
