@@ -151,7 +151,7 @@ body * {
     justify-content: center;
  }
 
-.vProduct #vMainImg {
+.vProduct #viMainImg {
     max-height: 300x;
     max-width: 100%;
 }
