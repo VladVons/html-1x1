@@ -13,8 +13,8 @@
             </div>
             <div class="modal-footer">
                 <p>Total sum:<span class="m-2 viTotalSum">1234.5</span></p>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-danger viClearAll"><i class="fa fa-trash m-1"></i>Clear all</button>
+                <a href="#"><button type="button" class="btn btn-secondary"><i class="fa fa-shopping-cart m-1"></i>buy</button></a>
+                <button type="button" class="btn btn-danger viClearAll"><i class="fa fa-trash m-1"></i>clear all</button>
             </div>
         </div>
     </div>
