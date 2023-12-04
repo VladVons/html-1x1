@@ -67,6 +67,12 @@ function postJson(aUrl, aData = {}) {
     return Res
 }
 
+function assert(aCond, aMsg = 'Error') {
+  if (!aCond) {
+    throw new Error(aMsg || " assertion failed")
+  }
+}
+
 function changeImage(aImg, aId, aHref = false) {
     const element = document.getElementById(aId)
     element.src = aImg.src
