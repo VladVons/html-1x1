@@ -5,6 +5,7 @@
     border-width: 0;
 }
 
+
 /* desktop */
 @media (min-width: 768px) {
     /* Fixed */
@@ -16,10 +17,6 @@
         position: fixed;
         width: 100%;
         box-shadow: 0 2px 10px var(--colorBgBtn);
-    }
-
-    .vSearch {
-        width: 500px;
     }
 }
 

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .autocomplete {
+              position: relative;
+              display: inline-block;
+              width:400px;
+            }
+
+            .autocomplete-block input {
+              border: 1px solid transparent;
+              background-color: #f1f1f1;
+              padding: 10px;
+              font-size: 16px;
+            }
+
+            .autocomplete-block input[type=text] {
+              background-color: #f1f1f1;
+              width: 100%;
+            }
+
+            .autocomplete-block input[type=submit] {
+              background-color: DodgerBlue;
+              color: #fff;
+              cursor: pointer;
+            }
+
+            .autocomplete-items {
+              position: absolute;
+              border: 1px solid #d4d4d4;
+              left: 0;
+              right: 0;
+            }
+
+            .autocomplete-items div {
+              padding: 10px;
+              cursor: pointer;
+              background-color: #fff; 
+              border-bottom: 1px solid #d4d4d4; 
+            }
+
+            .autocomplete-items div:hover {
+              background-color: #e9e9e9; 
+            }
+
+            .autocomplete-active {
+              background-color: DodgerBlue !important; 
+              color: #ffffff; 
+            }
+        </style>
+    </head>     
+    <body>
+
+    <h2>Autocomplete</h2>
+
+    <form autocomplete="off" action="/action_page.php">
+        <div class="autocomplete-block">
+            <div class="autocomplete">
+                <input id="myInput" type="text" name="myCountry" placeholder="Country" value="Pa">
+                <div id="myInputautocomplete-list" class="autocomplete-items">
+                    <div><strong>Pa</strong>kistan<input type="hidden" value="Pakistan"></div>
+                    <div><strong>Pa</strong>lau<input type="hidden" value="Palau"></div>
+                    <div><strong>Pa</strong>lestine<input type="hidden" value="Palestine"></div>
+                    <div><strong>Pa</strong>nama<input type="hidden" value="Panama"></div>
+                </div>
+            </div>
+            <input type="submit">
+        </div>
+    </form>
+
+    </body>
+</html>

@@ -42,14 +42,16 @@
                 </li>
             </ul>
 
-            <form role="search" action="/search.html" method="get">
-                <div class="input-group vSearch">
-                    <input type="hidden" name="route" value="product0/search"/>
-                    <input type="text" class="form-control" name="q" placeholder="search" list="viSearchSuggest" id="viSearchInput"/>
-                         <datalist id="viSearchSuggest">
-                            <option value="ukraine">
-                            <option value="poland">
-                        </datalist>
+            <form autocomplete="off" action="/search.html" method="get">
+                <div class="input-group autocomplete-block">
+                    <div class="autocomplete vSearch">
+                        <input type="hidden" name="route" value="product0/search"/>
+                        <input type="text" class="form-control" value="Pa" name="q" placeholder="search" id="viSearchInput"/>
+                        <div id="viSearchSuggest" class="autocomplete-items">
+                            <div><strong>Pa</strong>kistan<input type="hidden" value="Pakistan"></div>
+                            <div><strong>Pa</strong>lau<input type="hidden" value="Palau"></div>
+                        </div>
+                    </div>
                     <button class="btn btn-block" type="submit"><i class="fa fa-search" title="search"></i></button>
                 </div>
             </form>
