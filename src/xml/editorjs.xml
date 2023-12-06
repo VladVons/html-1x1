@@ -3,6 +3,9 @@
     <div class="vTitle">Content</div>
     <div class="vTitle">EditorJs</div>
     <div id="editor_js"></div>
-    <button class="btn btn-primary" id="viEditorBtnSave">Save</button>
+    <div>
+        <button class="btn btn-primary" id="viEditorBtnLoad">Load</button>
+        <button class="btn btn-primary" id="viEditorBtnSave">Save</button>
+    </div>
 </div>
 <!-- editor - -->

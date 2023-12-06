@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/vendor/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/editorjs.css">
+
+    <script src="assets/js/app.js"></script>
   </head>
 
   <body>

@@ -1,16 +1,21 @@
+/*
+Created: 2023.12.06
+Author: Vladimir Vons <VladVons@gmail.com>
+License: GNU, see LICENSE for more details
+*/
 
 
 function editorJsInit() {
     const editor = new EditorJS({
         holder: 'editor_js',
         autofocus: true,
-        tools: { 
+        tools: {
             header: {
-                class: Header, 
-                inlineToolbar: ['link'] 
-            }, 
-            image: { 
-                class: ImageTool, 
+                class: Header,
+                inlineToolbar: ['link']
+            },
+            image: {
+                class: ImageTool,
                 inlineToolbar: true,
                 config: {
                     endpoints1: {
@@ -19,8 +24,8 @@ function editorJsInit() {
                     }
                 }
             },
-            list: { 
-                class: List, 
+            list: {
+                class: List,
                 inlineToolbar: ['link']
             },
             linkTool: {
@@ -35,17 +40,38 @@ function editorJsInit() {
             table: {
                 class: Table
             },
-        } 
+        }
     })
+
+    const url = 'assets/cgi/editorjs.py'
 
     const elEditorBtnSave = document.getElementById('viEditorBtnSave')
     elEditorBtnSave.addEventListener('click', function(aEvent) {
         editor.save().then((aData) => {
-            console.log(aData)
-        }).catch((aErr) => {
+            postJson(url, {'mode':'save', 'data': aData})
+                .then(data => {
+                    console.log(aData)
+                })
+         }).catch((aErr) => {
             console.log('saving failed', aErr)
         })
     })
+
+    const elEditorBtnLoad = document.getElementById('viEditorBtnLoad')
+    elEditorBtnLoad.addEventListener('click', function(aEvent) {
+        editor.save().then((aData) => {
+            postJson(url, {'mode':'load'})
+                .then(data => {
+                    editor.isReady.then(() => {
+                        editor.render(data);
+                    })
+                })
+         }).catch((aErr) => {
+            console.log('loading failed', aErr)
+        })
+    })
+
+
 }
 
 editorJsInit()
