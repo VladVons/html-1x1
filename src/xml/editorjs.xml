@@ -1,0 +1,8 @@
+<!-- editor + -->
+<div class="container pb-3">
+    <div class="vTitle">Content</div>
+    <div class="vTitle">EditorJs</div>
+    <div id="editor_js"></div>
+    <button class="btn btn-primary" id="viEditorBtnSave">Save</button>
+</div>
+<!-- editor - -->

@@ -32,9 +32,18 @@ a2enmod cgi
 systemctl restart apache2
 
 
-#---- fontawesome
+#--- fontawesome
 https://fontawesome.com/v5/download
 unzip fontawesome-free-5.15.4-web.zip
 copy fontawesome-free-5.15.4-web/css/all to project/css/fontawesome.css
 replace in fontawesome.css webfonts with fonts
 copy fontawesome-free-5.15.4-web/webfonts/fa-solid-900.woff2 to project/fonts/
+
+#--- editor.js
+npm install @editorjs/editorjs @editorjs/header @editorjs/image
+#
+npm uninstall @editorjs/editorjs
+npm uninstall @editorjs/header
+
+search tool:
+https://www.jsdelivr.com/?query=%40editorjs%2Feditorjs

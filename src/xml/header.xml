@@ -49,7 +49,6 @@
                         <input type="text" class="form-control" value="Pa" name="q" placeholder="search" id="viSearchInput"/>
                         <div id="viSearchSuggest" class="autocomplete-items">
                             <div><strong>Pa</strong>kistan<input type="hidden" value="Pakistan"></div>
-                            <div><strong>Pa</strong>lau<input type="hidden" value="Palau"></div>
                         </div>
                     </div>
                     <button class="btn btn-block" type="submit"><i class="fa fa-search" title="search"></i></button>

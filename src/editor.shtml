@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <title>1x1 snippets</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/editorjs.css">
+  </head>
+
+  <body>
+    <!--#include file='xml/header.xml' -->
+    <!--#include file='xml/editorjs.xml' -->
+    <!--#include file='xml/footer.xml' -->
+
+    <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/image@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/link@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/code@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/table@latest"></script>
+    <script src="assets/js/editorjs.js"></script>
+
+    <script src="assets/js/navbar.js"></script>
+  </body>
+</html>
