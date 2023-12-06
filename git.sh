@@ -12,6 +12,12 @@ cMail="vladvons@gmail.com"
 cUrl="https://github.com/$cUser/html-1x1.git"
 
 
+Log()
+{
+    local aMsg=$1
+    echo $aMsg
+}
+
 GitAuth()
 {
   Log "$0->$FUNCNAME($*)"

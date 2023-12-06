@@ -47,7 +47,7 @@ class TDict {
 
 function postJson(aUrl, aData = {}) {
     const requestOptions = {
-        method: 'post',
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json',
       },
@@ -55,16 +55,31 @@ function postJson(aUrl, aData = {}) {
     }
 
     const Res = fetch(aUrl, requestOptions)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`)
+        .then(aResponse => {
+            if (!aResponse.ok) {
+                throw new Error(`HTTP error. Status: ${aResponse.status}`)
             }
-            return response.json()
+            return aResponse.json()
+        }) 
+        .then(aResponseData => {
+            return aResponseData
         })
-        .catch(error => {
-            console.error('Error:', error)
+        .catch(aErr => {
+            console.error('Err:', aErr)
         })
     return Res
+    /*
+    return fetch(aUrl, requestOptions)
+        .then(response => response.json())
+        .then(responseData => {
+            console.log('Success:', responseData);
+            return responseData
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            throw error
+        })
+    */
 }
 
 function assert(aCond, aMsg = 'Error') {

@@ -6,6 +6,8 @@ License: GNU, see LICENSE for more details
 
 
 function editorJsInit() {
+    const urlRoot = 'assets/cgi/editorjs.py'
+
     const editor = new EditorJS({
         holder: 'editor_js',
         autofocus: true,
@@ -18,9 +20,8 @@ function editorJsInit() {
                 class: ImageTool,
                 inlineToolbar: true,
                 config: {
-                    endpoints1: {
-                        byFile: 'http://localhost:8008/uploadFile',
-                        byUrl: 'http://localhost:8008/fetchUrl'
+                    endpoints: {
+                        byFile: urlRoot + '?mode=save_img'
                     }
                 }
             },
@@ -43,35 +44,37 @@ function editorJsInit() {
         }
     })
 
-    const url = 'assets/cgi/editorjs.py'
-
     const elEditorBtnSave = document.getElementById('viEditorBtnSave')
     elEditorBtnSave.addEventListener('click', function(aEvent) {
-        editor.save().then((aData) => {
-            postJson(url, {'mode':'save', 'data': aData})
-                .then(data => {
-                    console.log(aData)
-                })
-         }).catch((aErr) => {
-            console.log('saving failed', aErr)
+        editor.save().then((aEditorData) => {
+            const url = urlRoot + '?mode=save_editor'
+            postJson(url, {'data': aEditorData})
+            .then(data => {
+                if (data.status == 'err') {
+                    showTooltip('error ' + data.info)
+                }else{
+                    showTooltip(`saved with ${url}. status ${data.status}`)
+                }
+            })
         })
     })
 
     const elEditorBtnLoad = document.getElementById('viEditorBtnLoad')
     elEditorBtnLoad.addEventListener('click', function(aEvent) {
-        editor.save().then((aData) => {
-            postJson(url, {'mode':'load'})
-                .then(data => {
-                    editor.isReady.then(() => {
-                        editor.render(data);
-                    })
+        const url = urlRoot + '?mode=load_editor'
+        postJson(url, {})
+        .then(data => {
+            console.log('-x1', data)
+            if (Object.keys(data).length) {
+                editor.isReady.then(() => {
+                    editor.render(data)
+                    showTooltip('loaded with ' + url)
                 })
-         }).catch((aErr) => {
-            console.log('loading failed', aErr)
+            }else{
+                showTooltip('no saved data')
+            }
         })
     })
-
-
 }
 
 editorJsInit()
