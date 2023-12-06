@@ -5,7 +5,7 @@
     <div id="editor_js"></div>
     <div>
         <button class="btn btn-primary" id="viEditorBtnLoad">Load</button>
-        <button class="btn btn-primary" id="viEditorBtnSave">Save</button>
+        <button class="btn btn-primary" id="viEditorBtnSave">Save </button>
     </div>
 </div>
 <!-- editor - -->
