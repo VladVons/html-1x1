@@ -12,6 +12,7 @@ import sys
 import cgi
 import json
 
+cFile = 'editorjs.dat.json'
 
 def ParseQuery(aVal: str) -> dict:
     Res = {}
@@ -76,25 +77,26 @@ def Main():
     if (aMode == 'save_editor'):
         try:
             Data = GetPostAsJson()
-            SaveFileJson('editor.json', Data.get('data'))
+            SaveFileJson(cFile, Data.get('data'))
         except Exception as E:
             Code = 500
             Res = {'status': 'err', 'info': str(E)}
     elif (aMode == 'load_editor'):
         GetPostAsData()
-        Res = LoadFileJson('editor.json')
+        Res = LoadFileJson(cFile)
     elif (aMode == 'save_img'):
         Form = cgi.FieldStorage()
         if ('image' in Form):
             DirRoot = os.environ.get('DOCUMENT_ROOT')
             Dir = os.environ.get('SCRIPT_NAME').rsplit('/', maxsplit=1)[0]
-            File = SaveFileStorage(Form['image'], f'{DirRoot}{Dir}')
-            Res = {
-                'success' : 1,
-                'file': {
-                    'url' : f'{Dir}/{File}'
+            try:
+                File = SaveFileStorage(Form['image'], f'{DirRoot}{Dir}')
+                Res = {
+                    'success' : 1,
+                    'file': {'url' : f'{Dir}/{File}'}
                 }
-            }
+            except Exception as E:
+                Res = {'success' : 0, 'error': str(E)}
     else:
         Code = 404
         Res = {'status': 'err', 'info': f'unknown mode `{aMode}`'}
