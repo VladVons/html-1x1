@@ -9,6 +9,7 @@ License: GNU, see LICENSE for more details
 
 import os
 import sys
+import cgi
 import json
 
 
@@ -20,8 +21,14 @@ def ParseQuery(aVal: str) -> dict:
             Res[Key] = Val
     return Res
 
-def PostToJson() -> dict:
-    Data = sys.stdin.buffer.read()
+def GetPostAsData() -> dict:
+    return sys.stdin.buffer.read()
+
+def GetPostAsStr() -> dict:
+    return GetPostAsData().decode('utf-8')
+
+def GetPostAsJson() -> dict:
+    Data = GetPostAsData()
     if (Data):
         Res = json.loads(Data.decode('utf-8'))
     else:
@@ -39,6 +46,18 @@ def SaveFileJson(aFile: str, aData: dict):
     with open(aFile, 'w') as F:
         json.dump(aData, F)
 
+def SaveFileStorage(aFileItem, aDir: str) -> str:
+    Res = aFileItem.filename
+    os.makedirs(aDir, exist_ok=True)
+    File = f'{aDir}/{Res}'
+    with open(File, 'wb') as F:
+        F.write(aFileItem.file.read())
+    return Res
+
+def Log(aData: str, aFile: str = 'editorjs.log'):
+    with open(aFile, 'a+') as F:
+        F.write(f'{aData}\n')
+
 def Answer(aData: dict, aCode: int = 200):
     print('Content-type: application/json')
     print('Access-Control-Allow-Origin: *')
@@ -50,20 +69,32 @@ def Answer(aData: dict, aCode: int = 200):
 def Main():
     Code = 200
     Res = {'status': 'ok'}
-    #return Answer(Res, Code)
 
     Query = os.environ.get('QUERY_STRING')
     Query = ParseQuery(Query)
     aMode = Query.get('mode')
     if (aMode == 'save_editor'):
         try:
-            Data = PostToJson()
+            Data = GetPostAsJson()
             SaveFileJson('editor.json', Data.get('data'))
         except Exception as E:
             Code = 500
             Res = {'status': 'err', 'info': str(E)}
     elif (aMode == 'load_editor'):
+        GetPostAsData()
         Res = LoadFileJson('editor.json')
+    elif (aMode == 'save_img'):
+        Form = cgi.FieldStorage()
+        if ('image' in Form):
+            DirRoot = os.environ.get('DOCUMENT_ROOT')
+            Dir = os.environ.get('SCRIPT_NAME').rsplit('/', maxsplit=1)[0]
+            File = SaveFileStorage(Form['image'], f'{DirRoot}{Dir}')
+            Res = {
+                'success' : 1,
+                'file': {
+                    'url' : f'{Dir}/{File}'
+                }
+            }
     else:
         Code = 404
         Res = {'status': 'err', 'info': f'unknown mode `{aMode}`'}

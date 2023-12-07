@@ -2,10 +2,14 @@
 <div class="container pb-3">
     <div class="vTitle">Content</div>
     <div class="vTitle">EditorJs</div>
-    <div id="editor_js"></div>
+
     <div class="pt-3">
-        <button class="btn btn-primary" id="viEditorBtnLoad">Load</button>
-        <button class="btn btn-primary" id="viEditorBtnSave">Save </button>
+        <form1>
+            <div id="editor_js"></div>
+
+            <button class="btn btn-primary" id="viEditorBtnLoad">Load</button>
+            <button class="btn btn-primary" id="viEditorBtnSave">Save </button>
+        </form1>
     </div>
 </div>
 <!-- editor - -->

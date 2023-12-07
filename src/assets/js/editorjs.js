@@ -64,7 +64,6 @@ function editorJsInit() {
         const url = urlRoot + '?mode=load_editor'
         postJson(url, {})
         .then(data => {
-            console.log('-x1', data)
             if (Object.keys(data).length) {
                 editor.isReady.then(() => {
                     editor.render(data)
