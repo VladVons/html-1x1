@@ -107,14 +107,14 @@ GitToServ()
   local aComment=${1:-"MyCommit"};
   Log "$0->$FUNCNAME($*)"
 
-  Clean
+  #Clean
   # add all new files
   git add -A -v
   GitSyncToServ "$aComment"
 
-  echo
-  echo "Size"
-  { find ./src -type f -name "*.py" -printf "%s+"; echo 0; } | bc
+  #echo
+  #echo "Size"
+  #{ find ./src -type f -name "*.py" -printf "%s+"; echo 0; } | bc
 }
 
 
