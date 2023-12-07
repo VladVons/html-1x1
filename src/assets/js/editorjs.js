@@ -23,11 +23,13 @@ function editorJsInit() {
                     endpoints: {
                         byFile: urlRoot + '?mode=save_img'
                     }
-                }
+                },
+                tunes: ['alignment']
             },
             list: {
                 class: List,
-                inlineToolbar: ['link']
+                inlineToolbar: ['link'],
+                tunes: ['alignment']
             },
             linkTool: {
                 class: LinkTool,
@@ -41,6 +43,21 @@ function editorJsInit() {
             table: {
                 class: Table
             },
+            paragraph: {
+                class: Paragraph,
+                inlineToolbar: true,
+                tunes: ['alignment']
+            },
+            alignment: {
+                class: AlignmentBlockTune,
+                config:{
+                    default: "left",
+                    blocks: {
+                        header: 'center',
+                        list: 'right'
+                    }
+                }
+            }
         }
     })
 
