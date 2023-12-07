@@ -4,12 +4,11 @@
     <div class="vTitle">EditorJs</div>
 
     <div class="pt-3">
-        <form1>
-            <div id="editor_js"></div>
-
+        <div id="editor_js"></div>
+        <div class="pt-3">
             <button class="btn btn-primary" id="viEditorBtnLoad">Load</button>
             <button class="btn btn-primary" id="viEditorBtnSave">Save </button>
-        </form1>
+        </div>
     </div>
 </div>
 <!-- editor - -->
