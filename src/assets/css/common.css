@@ -155,3 +155,9 @@ body * {
     max-height: 300x;
     max-width: 100%;
 }
+
+.vLazyImg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}

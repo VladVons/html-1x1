@@ -37,5 +37,6 @@
     <script src="assets/js/search1.js"></script>
     <script src="assets/js/gotop.js"></script>
     <script src="assets/js/timer_modal.js"></script>
+    <script src="assets/js/lazyLoadImg.js"></script>
   </body>
 </html>
