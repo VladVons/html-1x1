@@ -14,9 +14,9 @@
   </head>
 
   <body>
-    <!--#include file='xml/header.xml' -->
-    <!--#include file='xml/editorjs.xml' -->
-    <!--#include file='xml/footer.xml' -->
+    <!--#include file='xml/admin/header.xml' -->
+    <!--#include file='xml/admin/editorjs.xml' -->
+    <!--#include file='xml/admin/footer.xml' -->
 
     <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
 

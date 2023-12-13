@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/vendor/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/vendor/css/fontawesome.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Bootstrap 5 Navbar with Submenu</title>
+    </head>
+    <body>
+        <!--#include file='xml/admin/header.xml' -->
+        <!--#include file='xml/admin/footer.xml' -->
+
+        <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
