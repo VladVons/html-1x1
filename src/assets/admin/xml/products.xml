@@ -1,47 +1,54 @@
 <!-- products + -->
 <div class="container mt-4 vBgMaster">
   <div class="row product-grid-header">
-    <div class="col-2">
-      <p>ID</p>
-    </div>
-    <div class="col-3">
-      <p>Name</p>
-    </div>
-    <div class="col-4">
-      <p>Image</p>
-    </div>
-    <div class="col-3">
-      <p>Price</p>
-    </div>
+    <div class="col-2">ID</div>
+    <div class="col-3">Name</div>
+    <div class="col-4">Image</div>
+    <div class="col-3">Price</div>
   </div>
 
   <div class="row product-grid-item" onclick="redirectToProductPage(1)">
     <div class="col-2">
-      <p>1</p>
+      1
     </div>
     <div class="col-3">
-      <p>Product 1</p>
+      Product 1
     </div>
     <div class="col-4">
-      <img src="assets/common/img/product1.jpg" alt="Product 1 Image">
+      <img src="assets/common/img/product1.jpg">
     </div>
     <div class="col-3">
-      <p>19.99</p>
+      19.99
     </div>
   </div>
 
   <div class="row product-grid-item" onclick="redirectToProductPage(2)">
     <div class="col-2">
-      <p>2</p>
+      2
     </div>
     <div class="col-3">
-      <p>Product 2</p>
+      Product 2
     </div>
     <div class="col-4">
-      <img src="assets/common/img/product2.jpg" alt="Product 1 Image">
+      <img src="assets/common/img/product2.jpg">
     </div>
     <div class="col-3">
-      <p>29.99</p>
+      29.99
+    </div>
+  </div>
+
+  <div class="row product-grid-item" onclick="redirectToProductPage(3)">
+    <div class="col-2">
+      3
+    </div>
+    <div class="col-3">
+      Product 3
+    </div>
+    <div class="col-4">
+      <img src="assets/common/img/product3.jpg">
+    </div>
+    <div class="col-3">
+      39.99
     </div>
   </div>
 
