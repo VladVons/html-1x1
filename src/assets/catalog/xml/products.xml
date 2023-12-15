@@ -5,7 +5,7 @@
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
                 <div class="card-header">
-                    <a href="#"><img class="vLazyImg" src-data="assets/img/product1.jpg" alt="Card Image"></a>
+                    <a href="#"><img class="vLazyImg" src-data="assets/common/img/product1.jpg" alt="Card Image"></a>
                 </div>
                 <div class="card-body">
                     <a href="#">Cable</a>
@@ -22,7 +22,7 @@
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
                 <div class="card-header vImgCenter">
-                    <a href="#"><img class="vLazyImg" src-data="assets/img/product2.jpg" alt="Card Image"></a>
+                    <a href="#"><img class="vLazyImg" src-data="assets/common/img/product2.jpg" alt="Card Image"></a>
                 </div>
                 <div class="card-body">
                     <a href="#">Flash memory</a>
@@ -43,7 +43,7 @@
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
                 <div class="card-header vImgCenter">
-                    <a href="#"><img src="assets/img/product3.jpg" alt="Card Image"></a>
+                    <a href="#"><img src="assets/common/img/product3.jpg" alt="Card Image"></a>
                 </div>
                 <div class="card-body">
                     <a href="#">Desktop</a>
@@ -61,25 +61,7 @@
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
                 <div class="card-header vImgCenter">
-                    <a href="#"><img src="assets/img/product4.jpg" alt="Card Image"></a>
-                </div>
-                <div class="card-body">
-                    <a href="#">Desktop</a>
-                    <div class="card-title">HP 7323/2GHz/8Gb/250SSD</div>
-                    <p class="card-text mb-4">Near Afionas village</p>
-                </div>
-                <div class="card-footer">
-                    <h4 class="fw-bold">123 грн</h4>
-                    <hr class="mt-1"/>
-                    <a href="#">pc-data</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-2 mb-2">
-            <div class="card vCard">
-                <div class="card-header vImgCenter">
-                    <a href="#"><img src="assets/img/product5.jpg" alt="Card Image"></a>
+                    <a href="#"><img src="assets/common/img/product4.jpg" alt="Card Image"></a>
                 </div>
                 <div class="card-body">
                     <a href="#">Desktop</a>
@@ -97,7 +79,25 @@
         <div class="col-lg-2 mb-2">
             <div class="card vCard">
                 <div class="card-header vImgCenter">
-                    <a href="#"><img src="assets/img/product6.jpg" alt="Card Image" ></a>
+                    <a href="#"><img src="assets/common/img/product5.jpg" alt="Card Image"></a>
+                </div>
+                <div class="card-body">
+                    <a href="#">Desktop</a>
+                    <div class="card-title">HP 7323/2GHz/8Gb/250SSD</div>
+                    <p class="card-text mb-4">Near Afionas village</p>
+                </div>
+                <div class="card-footer">
+                    <h4 class="fw-bold">123 грн</h4>
+                    <hr class="mt-1"/>
+                    <a href="#">pc-data</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2 mb-2">
+            <div class="card vCard">
+                <div class="card-header vImgCenter">
+                    <a href="#"><img src="assets/common/img/product6.jpg" alt="Card Image" ></a>
                 </div>
                 <div class="card-body">
                     <a href="#">Desktop</a>

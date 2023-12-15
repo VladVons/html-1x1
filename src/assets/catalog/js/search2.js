@@ -24,7 +24,7 @@ class TSearchNavbar {
         if (searchTerm.length > 0) {
             this.timeout = setTimeout(() => {
                 //const url = 'assets/cgi/search.json'
-                const url = 'assets/cgi/search.py?q=' + encodeURIComponent(searchTerm)
+                const url = 'assets/catalog/cgi/search.py?q=' + encodeURIComponent(searchTerm)
                 fetch(url)
                     .then(response => response.json())
                     .then(data => this.displayResult(aEvent, data))

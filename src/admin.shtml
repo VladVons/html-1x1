@@ -4,16 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="assets/vendor/css/bootstrap.css">
-        <link rel="stylesheet" href="assets/vendor/css/fontawesome.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/common/vendor/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/common/vendor/css/fontawesome.css">
+        <link rel="stylesheet" href="assets/admin/css/styles.css">
 
         <title>Bootstrap 5 Navbar with Submenu</title>
     </head>
     <body>
-        <!--#include file='xml/admin/header.xml' -->
-        <!--#include file='xml/admin/footer.xml' -->
+        <!--#include file='assets/admin/xml/header.xml' -->
+        <!--#include file='assets/admin/xml/product.xml' -->
+        <!--#include file='assets/admin/xml/products.xml' -->
+        <!--#include file='assets/admin/xml/footer.xml' -->
 
-        <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/common/vendor/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

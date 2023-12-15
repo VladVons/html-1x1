@@ -1,0 +1,15 @@
+<!-- footer + -->
+<div class="container mt-5 pt-3 pb-3 vFooter">
+    <div class="row">
+        <div class="col-lg-5 col-xs-12">
+            <div class="d-flex">
+                <a href="/"><img src="assets/common/img/logo-1x1.png" alt="Your Logo" height="45"></a>
+                <h4 class="mt-2">Торгова площадка</h4>
+            </div>
+        </div>
+        <div class="border-top mt-2">
+          <p><i class="fa fa-copyright m-1"></i>2023 1x1. Всі права захищені</p>
+        </div>
+    </div>
+</div>
+<!--  footer - -->

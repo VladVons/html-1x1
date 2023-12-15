@@ -5,20 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="assets/vendor/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/vendor/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/editorjs.css">
+    <link rel="stylesheet" href="assets/common/vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/common/vendor/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/admin/css/styles.css">
+    <link rel="stylesheet" href="assets/admin/css/editorjs.css">
 
-    <script src="assets/js/app.js"></script>
+    <script src="assets/common/js/app.js"></script>
   </head>
 
   <body>
-    <!--#include file='xml/admin/header.xml' -->
-    <!--#include file='xml/admin/editorjs.xml' -->
-    <!--#include file='xml/admin/footer.xml' -->
+    <!--#include file='assets/admin/xml/header.xml' -->
+    <!--#include file='assets/admin/xml/editorjs.xml' -->
+    <!--#include file='assets/admin/xml/footer.xml' -->
 
-    <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/common/vendor/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
@@ -29,8 +29,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/table@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/editorjs-text-alignment-blocktune@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/editorjs-paragraph-with-alignment@latest"></script>
-    <script src="assets/js/editorjs.js"></script>
+    <script src="assets/admin/js/editorjs.js"></script>
 
-    <script src="assets/js/navbar.js"></script>
+    <script1 src="assets/js/navbar.js"></script1>
   </body>
 </html>

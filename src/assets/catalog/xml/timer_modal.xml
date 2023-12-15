@@ -7,7 +7,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="assets/img/banner-timer.png" alt="Image" class="img-fluid">
+                <img src="assets/common/img/banner-timer.png" alt="Image" class="img-fluid">
                 <p>Hello from vTimerModal !</p>
             </div>
         </div>

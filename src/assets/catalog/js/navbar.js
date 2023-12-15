@@ -31,8 +31,8 @@ function navbarCategoryClick() {
         navbarSubmenu({"selector": "viMainNavbar2"})
     }
 
-    //const url = 'assets/cgi/category.json'
-    const url = 'assets/cgi/category.py'
+    //const url = 'assets/catalog/cgi/category.json'
+    const url = 'assets/catalog/cgi/category.py'
     fetch(url)
         .then(response => response.json())
         .then(data => displayResult(data))

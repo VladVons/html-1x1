@@ -6,7 +6,7 @@
             <div class="viCartItems">
                 <div class="row align-items-center mb-2">
                     <div class="col-md-3">
-                        <a href="#"><img class="img-fluid rounded-3" style="width: 80px" src="assets/img/product1.jpg" alt="image xyz"></a>
+                        <a href="#"><img class="img-fluid rounded-3" style="width: 80px" src="assets/common/img/product1.jpg" alt="image xyz"></a>
                     </div>
                     <div class="col-md-3">
                         <h4>DVI cabel 1.8m</h4>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="row align-items-center mb-2">
                     <div class="col-md-3">
-                        <a href="#"><img class="img-fluid rounded-3" style="width: 80px" src="assets/img/product2.jpg" alt="image xyz"></a>
+                        <a href="#"><img class="img-fluid rounded-3" style="width: 80px" src="assets/common/img/product2.jpg" alt="image xyz"></a>
                     </div>
                     <div class="col-md-3">
                         <h4>USB flash memory 64Gb</h4>

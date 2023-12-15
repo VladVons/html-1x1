@@ -1,0 +1,21 @@
+.product-grid-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+.product-grid-item img {
+  height: 100px;
+  max-width: 50%;
+}
+
+.product-grid-header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+  border: 1px solid #ddd;
+  font-weight: bold; 
+}

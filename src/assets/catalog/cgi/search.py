@@ -13,5 +13,6 @@ if (qVal):
 else:
     Res = []
 
-print('Content-type: application/json\n')
+print('Content-type: application/json')
+print()
 print(json.dumps(Res))

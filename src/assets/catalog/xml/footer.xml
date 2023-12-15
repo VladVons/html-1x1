@@ -1,10 +1,9 @@
 <!-- footer + -->
-<div class="mt-5 pt-3 pb-3 vFooter">
-  <div class="container">
+  <div class="container mt-5 pt-3 pb-3 vFooter">
     <div class="row">
       <div class="col-lg-5 col-xs-12">
     <a class="navbar-brand mr-5" href="/">
-      <img src="assets/img/logo-1x1.png" alt="Your Logo" height="50" class="d-inline-block">
+      <img src="assets/common/img/logo-1x1.png" alt="Your Logo" height="50" class="d-inline-block">
     </a>
         <h4>Маркет брендової компютерної техніки</h4>
         <p>
@@ -33,5 +32,4 @@
       <p><i class="fa fa-copyright m-1"></i>2023 1x1. Всі права захищені</p>
     </div>
   </div>
-</div>
 <!--  footer - -->

@@ -6,7 +6,7 @@ License: GNU, see LICENSE for more details
 
 
 function editorJsInit() {
-    const urlRoot = 'assets/cgi/editorjs.py'
+    const urlRoot = 'assets/admin/cgi/editorjs.py'
 
     const editor = new EditorJS({
         holder: 'editor_js',

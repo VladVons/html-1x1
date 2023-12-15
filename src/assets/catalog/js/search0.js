@@ -18,7 +18,7 @@ function searchNavbar() {
             clearTimeout(timeout)
             timeout = setTimeout(() => {
                 //const url = 'assets/cgi/search.json'
-                const url = 'assets/cgi/search.py?q=' + encodeURIComponent(value)
+                const url = 'assets/catalog/cgi/search.py?q=' + encodeURIComponent(value)
                 fetch(url)
                     .then(response => response.json())
                     .then(data => displayResult(aEvent, data))

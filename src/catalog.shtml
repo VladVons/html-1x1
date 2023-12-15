@@ -5,38 +5,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="assets/vendor/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/vendor/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/common/vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/common/vendor/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/catalog/css/styles.css">
 
-    <script src="assets/js/app.js"></script>
+    <script src="assets/common/js/app.js"></script>
     <script>gData = new TDict()</script>
   </head>
 
   <body>
-    <!--#include file='xml/catalog/header.xml' -->
-    <!--#include file='xml/catalog/carousel.xml' -->
-    <!--#include file='xml/catalog/faq.xml' -->
-    <!--#include file='xml/catalog/products.xml' -->
-    <!--#include file='xml/catalog/pagination.xml' -->
-    <!--#include file='xml/catalog/blog.xml' -->
-    <!--#include file='xml/catalog/product.xml' -->
-    <!--#include file='xml/catalog/cart-modal.xml' -->
-    <!--#include file='xml/catalog/cart.xml' -->
-    <!--#include file='xml/catalog/payment.xml' -->
-    <!--#include file='xml/catalog/contact.xml' -->
-    <!--#include file='xml/404.xml' -->
-    <!--#include file='xml/login.xml' -->
-    <!--#include file='xml/catalog/timer_modal.xml' -->
-    <!--#include file='xml/gotop.xml' -->
-    <!--#include file='xml/catalog/footer.xml' -->
+    <!--#include file='assets/catalog/xml/header.xml' -->
+    <!--#include file='assets/catalog/xml/carousel.xml' -->
+    <!--#include file='assets/catalog/xml/faq.xml' -->
+    <!--#include file='assets/catalog/xml/products.xml' -->
+    <!--#include file='assets/catalog/xml/pagination.xml' -->
+    <!--#include file='assets/catalog/xml/blog.xml' -->
+    <!--#include file='assets/catalog/xml/product.xml' -->
+    <!--#include file='assets/catalog/xml/cart-modal.xml' -->
+    <!--#include file='assets/catalog/xml/cart.xml' -->
+    <!--#include file='assets/catalog/xml/payment.xml' -->
+    <!--#include file='assets/catalog/xml/contact.xml' -->
+    <!--#include file='assets/catalog/xml/timer_modal.xml' -->
+    <!--#include file='assets/catalog/xml/footer.xml' -->
+    <!--#include file='assets/common/xml/404.xml' -->
+    <!--#include file='assets/common/xml/login.xml' -->
+    <!--#include file='assets/common/xml/gotop.xml' -->
 
-    <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/cart.js"></script>
-    <script src="assets/js/search1.js"></script>
-    <script src="assets/js/gotop.js"></script>
-    <script src="assets/js/timer_modal.js"></script>
-    <script src="assets/js/lazyLoadImg.js"></script>
+    <script src="assets/common/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/common/js/gotop.js"></script>
+    <script src="assets/catalog/js/navbar.js"></script>
+    <script src="assets/catalog/js/cart.js"></script>
+    <script src="assets/catalog/js/search1.js"></script>
+    <script src="assets/catalog/js/timer_modal.js"></script>
+    <script src="assets/catalog/js/lazyLoadImg.js"></script>
   </body>
 </html>
