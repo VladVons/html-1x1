@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Bootstrap 5 Navbar with Submenu</title>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -8,7 +10,7 @@
         <link rel="stylesheet" href="assets/common/vendor/css/fontawesome.css">
         <link rel="stylesheet" href="assets/admin/css/styles.css">
 
-        <title>Bootstrap 5 Navbar with Submenu</title>
+        <script src="assets/common/js/app.js"></script>
     </head>
     <body>
         <!--#include file='assets/admin/xml/header.xml' -->
@@ -17,5 +19,8 @@
         <!--#include file='assets/admin/xml/footer.xml' -->
 
         <script src="assets/common/vendor/js/bootstrap.bundle.min.js"></script>
+        <script>
+            let Redirect = new TRedirect('/admin/?route=product&product_id={id}')
+        </script>
     </body>
 </html>

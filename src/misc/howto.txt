@@ -47,3 +47,10 @@ npm uninstall @editorjs/header
 
 search tool:
 https://www.jsdelivr.com/?query=%40editorjs%2Feditorjs
+
+#--- JS debug
+npm install -g live-server
+run live-server in vscode terminal
+click "run & debug" button
+use chrome or node.js
+

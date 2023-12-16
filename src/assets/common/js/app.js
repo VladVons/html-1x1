@@ -45,6 +45,21 @@ class TDict {
     }
 }
 
+/*
+let Redirect = new TRedirect('/admin/?route=product&product_id={id}')
+Redirect.To({'id': 12})
+*/
+class TRedirect {
+    constructor(aPattern) {
+        this.pattern = aPattern
+    }
+
+    To(aValues) {
+        const url = this.pattern.replace(/\{(\w+)\}/g, (match, key) => aValues[key] || match)
+        window.location.href = url
+    }
+}
+
 function postJson(aUrl, aData = {}) {
     const requestOptions = {
         method: 'POST',
@@ -60,7 +75,7 @@ function postJson(aUrl, aData = {}) {
                 throw new Error(`HTTP error. Status: ${aResponse.status}`)
             }
             return aResponse.json()
-        }) 
+        })
         .then(aResponseData => {
             return aResponseData
         })
