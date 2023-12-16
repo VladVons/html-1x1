@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ua">
   <head>
-    <title>1x1 snippets</title>
+    <title>eCommerce back-end editor</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/admin/css/styles.css">
     <link rel="stylesheet" href="assets/admin/css/editorjs.css">
 
+    <script src="assets/common/js/lib.js"></script>
     <script src="assets/common/js/app.js"></script>
   </head>
 
@@ -29,8 +30,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@editorjs/table@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/editorjs-text-alignment-blocktune@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/editorjs-paragraph-with-alignment@latest"></script>
-    <script src="assets/admin/js/editorjs.js"></script>
 
-    <script1 src="assets/js/navbar.js"></script1>
+    <script src="assets/admin/js/editorjs.js"></script>
   </body>
 </html>

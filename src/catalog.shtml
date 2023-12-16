@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ua">
   <head>
-    <title>1x1 snippets</title>
+    <title>eCommerce front-end snippets</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/common/vendor/css/fontawesome.css">
     <link rel="stylesheet" href="assets/catalog/css/styles.css">
 
+    <script src="assets/common/js/lib.js"></script>
     <script src="assets/common/js/app.js"></script>
     <script>gData = new TDict()</script>
   </head>
