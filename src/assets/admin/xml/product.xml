@@ -11,16 +11,16 @@
         <div class="mb-3">
             <label>Category</label>
             <div class="d-flex">
-                <ul class="navbar-nav" title="categories">
+                <h5 class="mt-1">Computers</h5>
+                <ul class="navbar-nav mx-2" title="categories">
                     <li class="nav-item dropdown" id="viMainNavbar2">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="navbarCategoryClick()" href="#"><i class="fa fa-bars" style="font-size: 2.0em;"></i></a>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" onclick="navbarCategoryClick()" href="#"><i class="fa fa-bars" style="font-size: 1.5em;"></i></a>
                         <ul class="dropdown-menu" id="viMainNavbarItems">
                             <li><a class="dropdown-item" href="#">item1 </a></li>
                             <li><a class="dropdown-item" href="#">item2 </a></li>
                         </ul>
                     </li>
                 </ul>
-                <h5 class="m-2">Computers<h5>
             </div>
         </div>
 

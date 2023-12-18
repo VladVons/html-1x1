@@ -7,14 +7,19 @@
 }
 
 .product-grid-item img {
-  height: 100px;
+  height: 60px;
   max-width: 50%;
+}
+
+.product-grid-item:nth-child(odd) {
+  background-color: var(--colorBgSlave);
 }
 
 .product-grid-header {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: var(--colorBgFooter);
+  color: var(--colorBgMaster);
   z-index: 1000;
   border: 1px solid #ddd;
   font-weight: bold; 

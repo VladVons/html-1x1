@@ -1,6 +1,6 @@
 <!-- products + -->
 <div class="container mt-4 vBgMaster">
-  <div class="row product-grid-header">
+    <div class="row product-grid-header">
     <div class="col-2">ID</div>
     <div class="col-3">Name</div>
     <div class="col-4">Image</div>
