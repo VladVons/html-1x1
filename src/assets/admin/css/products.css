@@ -15,6 +15,10 @@
   background-color: var(--colorBgSlave);
 }
 
+.product-grid-item:hover {
+  color: var(--colorBgBtn);
+}
+
 .product-grid-header {
   position: sticky;
   top: 0;
