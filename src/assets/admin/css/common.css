@@ -161,3 +161,13 @@ body * {
     height: auto;
     margin-bottom: 10px;
 }
+
+.vChanged {
+      background-color: #ffe6e6;
+}
+
+input:read-only {
+    background-color: #f0f0f0;
+}
+
+ 

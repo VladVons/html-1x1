@@ -2,10 +2,10 @@
 <div class="container mt-3 vBgMaster">
   <h2>Edit Product</h2>
   
-    <form>
+    <form id="viUndoForm">
         <div class="mb-3">
             <input class="form-check-input" type="checkbox" id="exampleCheckbox" checked>
-            <label class="form-check-label" for="exampleCheckbox1">Enable</label>
+            <label>Enable</label>
         </div>
 
         <div class="mb-3">
@@ -26,38 +26,37 @@
 
         <div class="row mb-3">
             <div class="col-11">
-              <label for="Name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="Name" placeholder="product name">
+              <label>Name</label>
+              <input type="text" class="form-control" id="Name" placeholder="product name" value="Dell optiplex 7010">
             </div>
               <div class="col">
-                <label class="form-label">Code</label>
-                <h5>12/1123<h5>
+                <label>Code</label>
               </div>
         </div>
 
         <div class="mb-3">
-          <label for="Description" class="form-label">Description</label>
-          <textarea class="form-control" id="Description" rows="3" placeholder="product description"></textarea>
+          <label>Description</label>
+          <textarea class="form-control" name="description" rows="3" placeholder="product description"></textarea>
         </div>
         
         <div class="row mb-3">
           <div class="col">
-            <label for="salePrice" class="form-label">Sale price</label>
-            <input type="text" class="form-control" id="salePrice" placeholder="Enter sale price">
+            <label>Sale price</label>
+            <input type="number" class="form-control" name="sale_price" placeholder="Enter sale price" value="123.4" min="0" step="0.1">
           </div>
           <div class="col">
             <label>Incoming Price</label>
-            <h5>1234<h5>
+            <input type="number" class="form-control" name="income_price" placeholder="Enter income price" value="100" min="0">
           </div>
           <div class="col">
             <label>Margin</label>
-            <h5>12%<h5>
+            <input class="form-control" value="12%" readonly>
           </div>
         </div>
         
         <div class="mb-3">
           <label for="Quantity" class="form-label">Quantity</label>
-          <input type="text" class="form-control" id="Quantity" placeholder="Enter product quantity">
+          <input type="number" class="form-control" id="Quantity" placeholder="Enter product quantity" min="0">
         </div>
         
         <div class="mb-3">
@@ -65,7 +64,14 @@
           <input type="file" class="form-control" id="Images" multiple>
         </div>
         
-        <button type="submit" class="btn btn-primary">Save Changes</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button class="btn btn-primary" id="viUndoBtn">Undo</button>
   </form>
+  <script>
+    const formChangeTracker = new TFormChangeTracker('viUndoForm', 'vChanged')
+
+    const Btn = document.getElementById("viUndoBtn")
+    Btn.addEventListener('click', formChangeTracker.undoChanges())
+  </script>
 </div>
 <!-- product + -->
