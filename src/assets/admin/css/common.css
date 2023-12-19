@@ -7,6 +7,10 @@
     --colorBgFooter: rgb(20, 20, 77);
     --colorBgMaster: White;
     --colorBgSlave: LightGray;
+    /*
+    --colorChanged: hsl(180, 100%, 90%);
+    */
+    --colorChanged: LightGreen;
 }
 
 /*-- overwrites --*/
@@ -163,8 +167,8 @@ body * {
 }
 
 .vChanged {
-      background-color: #ffe6e6;
-      border-color: #2f2f2f;
+    -background-color: var(--colorChanged);
+    border: 5px solid var(--colorChanged);
 }
 
 input:read-only {
