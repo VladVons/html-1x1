@@ -108,6 +108,7 @@ class TFormChangeTracker {
     undoChanges() {
         for (const x of this.getInputs()) {
             this.setValue(x, this.initialValues[this.getAttr(x)])
+            x.classList.remove(this.checkedName)
         }
     }
     
