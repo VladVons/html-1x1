@@ -22,7 +22,7 @@
     </div>
   </div>
 
-  <div class="row product-grid-item" onclick="Redirect.To({'id': 2})">
+  <div class="row product-grid-item vDisabled" onclick="Redirect.To({'id': 2})">
     <div class="col-2">
       2
     </div>

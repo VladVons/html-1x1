@@ -11,6 +11,7 @@
     --colorChanged: hsl(180, 100%, 90%);
     */
     --colorChanged: LightGreen;
+    --colorDisabled: Gray;
 }
 
 /*-- overwrites --*/
@@ -169,6 +170,10 @@ body * {
 .vChanged {
     -background-color: var(--colorChanged);
     border: 5px solid var(--colorChanged);
+}
+
+.vDisabled {
+    color: var(--colorDisabled);
 }
 
 input:read-only {

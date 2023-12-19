@@ -149,7 +149,7 @@ class TRedirect {
     }
 
     To(aValues) {
-        const url = Format(this.pattern, aValues)
+        const url = format(this.pattern, aValues)
         window.location.href = url
     }
 }
