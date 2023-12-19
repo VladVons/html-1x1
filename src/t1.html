@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .changed {
+      background-color: #ffcccb; /* Highlight color */
+    }
+  </style>
+  <title>Form Change Tracker</title>
+</head>
+<body>
+
+  <form id="exampleForm">
+    <label for="textInput">Text Input:</label>
+    <input type="text" id="textInput" name="textInput" value="Initial Value">
+
+    <br>
+
+    <label for="textareaInput">Textarea:</label>
+    <textarea id="textareaInput" name="textareaInput">Initial Text</textarea>
+
+    <br>
+
+    <label>Checkbox:</label>
+    <input type="checkbox" id="checkboxInput" name="checkboxInput">
+  </form>
+
+  <script>
+    class FormChangeTracker {
+      constructor(formId) {
+        this.form = document.getElementById(formId);
+        this.changedFields = {};
+
+        if (this.form) {
+          this.initialize();
+        } else {
+          console.error(`Form with ID '${formId}' not found.`);
+        }
+      }
+
+      initialize() {
+        // Get all input, textarea, and checkbox elements within the form
+        const formElements = this.form.querySelectorAll('input[type="text"], textarea, input[type="checkbox"]');
+
+        // Attach event listeners to track changes for "input", "textarea", and "checkbox"
+        formElements.forEach((element) => {
+          element.addEventListener('input', () => {
+            this.trackChange(element);
+          });
+          if (element.type === 'checkbox') {
+            element.addEventListener('change', () => {
+              this.trackChange(element);
+            });
+          }
+        });
+      }
+
+      trackChange(element) {
+        const fieldName = element.name || element.id;
+
+        if (fieldName) {
+          this.changedFields[fieldName] = element.value;
+          // Highlight the changed element
+          element.classList.add('changed');
+        }
+      }
+
+      getChangedValues() {
+        return this.changedFields;
+      }
+
+      reset() {
+        this.changedFields = {};
+        // Remove the "changed" class from all elements
+        const changedElements = this.form.querySelectorAll('.changed');
+        changedElements.forEach((element) => {
+          element.classList.remove('changed');
+        });
+      }
+    }
+
+    // Example usage:
+    const formTracker = new FormChangeTracker('exampleForm');
+
+    // Access changed values
+    const changedValues = formTracker.getChangedValues();
+    console.log(changedValues);
+
+    // Reset the tracker (clears the changed values)
+    formTracker.reset();
+  </script>
+
+</body>
+</html>

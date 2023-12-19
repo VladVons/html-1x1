@@ -164,6 +164,7 @@ body * {
 
 .vChanged {
       background-color: #ffe6e6;
+      border-color: #2f2f2f;
 }
 
 input:read-only {

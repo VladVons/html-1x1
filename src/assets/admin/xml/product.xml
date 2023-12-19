@@ -4,8 +4,8 @@
   
     <form id="viFormUndo">
         <div class="mb-3">
-            <input class="form-check-input" type="checkbox" id="exampleCheckbox" checked>
-            <label>Enable</label>
+            <input class="form-check-input" type="checkbox" name="enabled" id="chkInput" checked/>
+            <label for="chkInput">Enable</label>
         </div>
 
         <div class="mb-3">
@@ -27,7 +27,7 @@
         <div class="row mb-3">
             <div class="col-11">
               <label>Name</label>
-              <input type="text" class="form-control" id="Name" placeholder="product name" value="Dell optiplex 7010">
+              <input type="text" class="form-control" name="Name" placeholder="product name" value="Dell optiplex 7010"/>
             </div>
               <div class="col">
                 <label>Code</label>
@@ -36,32 +36,32 @@
 
         <div class="mb-3">
           <label>Description</label>
-          <textarea class="form-control" name="description" rows="3" placeholder="product description"></textarea>
+          <textarea class="form-control" name="description" rows="3" placeholder="product description">this is a body</textarea>
         </div>
         
         <div class="row mb-3">
           <div class="col">
             <label>Sale price</label>
-            <input type="number" class="form-control" name="sale_price" placeholder="Enter sale price" value="123.4" min="0" step="0.1">
+            <input type="number" class="form-control" name="sale_price" placeholder="Enter sale price" value="123.4" min="0" step="0.1"/>
           </div>
           <div class="col">
             <label>Incoming Price</label>
-            <input type="number" class="form-control" name="income_price" placeholder="Enter income price" value="100" min="0">
+            <input type="number" class="form-control" name="income_price" placeholder="Enter income price" value="100" min="0"/>
           </div>
           <div class="col">
             <label>Margin</label>
-            <input class="form-control" value="12%" readonly>
+            <input class="form-control" value="12%" readonly/>
           </div>
         </div>
         
         <div class="mb-3">
           <label for="Quantity" class="form-label">Quantity</label>
-          <input type="number" class="form-control" name="Quantity" placeholder="Enter product quantity" min="0">
+          <input type="number" class="form-control" name="Quantity" placeholder="Enter product quantity" min="0"/>
         </div>
         
         <div class="mb-3">
           <label for="Images" class="form-label">Images</label>
-          <input type="file" class="form-control" id="Images" multiple>
+          <input type="file" class="form-control" id="Images" multiple/>
         </div>
         
         <button type="submit" class="btn btn-primary">Save</button>
