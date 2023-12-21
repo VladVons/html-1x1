@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .readonly-group input {
+      pointer-events: none;
+      background-color: gray; /* Optional: Add a different background color to indicate read-only state */
+    }
+  </style>
+  <title>Read-only Inputs with CSS Class</title>
+</head>
+<body>
+
+<div class="container mt-5">
+  <form>
+    <div class="readonly-group">
+      <div class="mb-3">
+        <label for="input1" class="form-label">Input 1</label>
+        <input type="text" class="form-control" id="input1" value="Read-only Value 1">
+      </div>
+      <div class="mb-3">
+        <label for="input2" class="form-label">Input 2</label>
+        <input type="text" class="form-control" id="input2" value="Read-only Value 2">
+      </div>
+      <!-- Add more input fields as needed -->
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

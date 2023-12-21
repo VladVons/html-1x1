@@ -46,10 +46,14 @@ class TDict {
 }
 
 class TFormChangeTracker {
-    constructor(aFormId, aCheckedName) {
-        this.checkedName = aCheckedName
-        this.initialValues = {}
+    constructor(aFormId, aOptions = {}) {
+        const defOption = {
+            changed: 'vChanged',
+            readonly: 'vReadonly'
+        }
+        this.options = { ...defOption, ...aOptions }
 
+        this.initialValues = {}
         this.form = document.getElementById(aFormId)
         this.init()
     }
@@ -85,10 +89,10 @@ class TFormChangeTracker {
                 const currentValue = this.getValue(element)
 
                 if (currentValue !== initialValue) {
-                    element.classList.add(this.checkedName)
+                    element.classList.add(this.options.changed)
                     element.title = initialValue
                 } else {
-                    element.classList.remove(this.checkedName)
+                    element.classList.remove(this.options.changed)
                     element.title = ''
                 }
             }
@@ -109,7 +113,7 @@ class TFormChangeTracker {
     undoChanges() {
         for (const x of this.getInputs()) {
             this.setValue(x, this.initialValues[this.getAttr(x)])
-            x.classList.remove(this.checkedName)
+            x.classList.remove(this.options.changed)
         }
     }
 
@@ -133,6 +137,13 @@ class TFormChangeTracker {
         }
     }
 
+    setReadonly(aVal) {
+        if (aVal) {
+            this.form.classList.add(this.options.readonly)
+        }else{
+            this.form.classList.remove(this.options.readonly)
+        }
+    }
 }
 
 function format(aPattern, aValues) {

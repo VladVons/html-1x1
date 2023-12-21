@@ -69,10 +69,15 @@
         <button type="button" class="btn btn-primary" id="viBtnUndo">Undo</button>
   </form>
   <script>
-    const formChangeTracker = new TFormChangeTracker('viFormUndo', 'vChanged')
+    const formTracker = new TFormChangeTracker('viFormUndo', 'vChanged')
 
     const Btn = document.getElementById("viBtnUndo")
-    Btn.onclick = () => formChangeTracker.undoChanges()
+    Btn.onclick = () => formTracker.undoChanges()
+
+    document.getElementById("chkInput").onclick = function(event) {
+        formTracker.setReadonly(!event.target.checked)
+        event.target.style.pointerEvents = 'auto'
+    }
   </script>
 </div>
 <!-- product + -->

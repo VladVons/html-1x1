@@ -12,6 +12,7 @@
     */
     --colorChanged: LightGreen;
     --colorDisabled: Gray;
+    --colorReadOnly: #f0f0f0;
 }
 
 /*-- overwrites --*/
@@ -176,8 +177,12 @@ body * {
     color: var(--colorDisabled);
 }
 
-input:read-only {
-    background-color: #f0f0f0;
+.vReadonly input,
+.vReadonly textarea {
+    pointer-events: none;
+    background-color: var(--colorReadOnly);
 }
 
- 
+input:read-only {
+    background-color: var(--colorReadOnly);
+}
