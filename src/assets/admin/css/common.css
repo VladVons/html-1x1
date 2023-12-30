@@ -117,7 +117,7 @@ body * {
     /*overflow: hidden;*/
 }
 
-/*-- card --*/
+/*-- card small --*/
 .vCard img {
     max-height: 210px;
     max-width: 100%;
@@ -138,6 +138,32 @@ body * {
     display: flex;
     flex-direction: column;
 }
+
+
+/*-- card middle --*/
+
+.vCard-m img {
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+.vCard-m1 .card-header{
+    height: 420px;
+    max-width: 100%;
+    background-color: var(--colorBgMaster);
+}
+
+.vCard-m1 .card-body {
+    height: 350px;
+    background-color: var(--colorBgSlave);
+}
+
+.vCard-m1 .card-footer {
+    background-color: var(--colorBgMaster);
+    display: flex;
+    flex-direction: column;
+}
+
 
 /*-- product --*/
 .vProduct .vProductThumbs {

@@ -1,15 +1,22 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080/search.html",
-            "webRoot": "${workspaceFolder}"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python CGI",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/assets/admin/cgi/editorjs.py",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "SERVER_PROTOCOL": "HTTP/1.1",
+        "SERVER_PORT": "8888",
+        "REQUEST_METHOD": "GET",
+        "QUERY_STRING": "",
+        "GATEWAY_INTERFACE": "CGI/1.1",
+        "REMOTE_ADDR": "127.0.0.1",
+        "REMOTE_PORT": "8888"
+      },
+    }
+  ]
 }

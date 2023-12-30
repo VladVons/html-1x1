@@ -1,0 +1,70 @@
+<!-- filemanager + -->
+<div class="container mt-5 pt-3 pb-3 vFooter">
+    <h2 class="fw-bold mb-4">images</h2>
+    <form id="viImage">
+        <div class="row mb-3">
+          <div class="col-sm-2">
+            <a href="#" class="btn btn-primary"><i class="fa fa-level-up-alt m-1" title="parent"></i></a>
+            <button type="button" title="refresh" class="btn btn-primary"><i class="fa fa-sync"></i></button>
+            <button type="button" title="upload" class="btn btn-primary"><i class="fa fa-upload"></i></button>
+            <button type="button" title="delete" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+          </div>
+          <div class="col-sm-3">
+            <div class="input-group">
+                <input type="text" name="new_folder" value="" placeholder="new folder" class="form-control">
+                <button type="button" title="New folder" class="btn btn-primary"><i class="fa fa-folder"></i></button>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="input-group">
+              <input type="text" name="search" value="" placeholder="Search.." class="form-control">
+              <button type="button" title="Search" class="btn btn-primary"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card col-md-4 vCard">
+              <div class="card-header">
+                  <a href="#"><i class="fa fa-folder fa-8x"></i></a>
+              </div>
+              <div class="card-footer">
+                  <p>Folder 1</p>
+                  <p>Size: 122Mb (20 files)</p>
+                  <input type="checkbox" name="delete[]" value="image1">
+              </div>
+          </div>
+          <div class="card col-md-4 vCard">
+              <div class="card-header">
+                  <a href="#"><img class="img-thumb" src="assets/common/img/product1.jpg"></a>
+              </div>
+              <div class="card-footer">
+                  <p>Image 1</p>
+                  <p>Size: 800x600</p>
+                  <input type="checkbox" name="delete[]" value="image1">
+              </div>
+          </div>
+          <div class="card col-md-4 vCard">
+              <div class="card-header">
+                  <a href="#"><img class="img-thumb" src="assets/common/img/product3.jpg"></a>
+              </div>
+              <div class="card-footer">
+                  <p>Image 1</p>
+                  <p>Size: 800x600</p>
+                  <input type="checkbox" name="delete[]" value="image1">
+              </div>
+          </div>
+          <div class="card col-md-4 vCard">
+              <div class="card-header">
+                  <a href="#"><img class="img-thumb" src="assets/common/img/product7.jpg"></a>
+              </div>
+              <div class="card-footer">
+                  <p>Image 1</p>
+                  <p>Size: 800x600</p>
+                  <input type="checkbox" name="delete[]" value="image1">
+              </div>
+          </div>
+        </div>
+    </form>
+</div>
+<!-- filemanager - -->

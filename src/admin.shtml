@@ -15,8 +15,9 @@
     </head>
     <body>
         <!--#include file='assets/admin/xml/header.xml' -->
-        <!--#include file='assets/admin/xml/product.xml' -->
-        <!--#include file='assets/admin/xml/products.xml' -->
+        <!-- #include file='assets/admin/xml/product.xml' -->
+        <!-- #include file='assets/admin/xml/products.xml' -->
+        <!--#include file='assets/admin/xml/filemanager.xml' -->
         <!--#include file='assets/admin/xml/footer.xml' -->
 
         <script src="assets/common/vendor/js/bootstrap.bundle.min.js"></script>
